@@ -1,29 +1,34 @@
 # MILES
 Metadata Improvement Lab at ESIP: Schema.org
-Overview of session(5m)(Sean)
+### Overview of session(5m)(Sean)
 
-Presentation on NOAA's work with Schema.org (10-15m)(John)
+### Presentation on NOAA's work with Schema.org (10-15m)(John)
 * https://docs.google.com/presentation/d/1tuA24Xir10nTvn9bVHpI6y-NVydjRaOWWuqNNvn6zsA/edit
 
-Jupyter Notebooks on ESIPhub tutorial(1-5m)(Keith)
+### Jupyter Notebooks on ESIPhub tutorial(1-5m)(Keith, Sean)
 * *cheetsheet and lightning presentations needed*
 
-MDeval intro, MEWs reference(2-5m)(Sean)
-
-Notebook(65-77m)
-* upload metadata from repo/website(10)(Sean)
-* evaluate for concepts and xpaths(10)(Sean)
-* clean metadata if concept evaluation smaller than certain size(10)(Sean)
-* Create collection spreadsheet(10)(Sean)
+### Notebooks(45-55m)
+#### MDeval.ipynb
+* MDeval intro
+* upload metadata from repo/website(5-10)(Sean)
+* evaluate for concepts and xpaths(5-10)(Sean)
+* Create collection spreadsheet(5-10)(Sean)
 * create Google sheet(10)(Sean)
-* create JSON-LD from evaluated concept csv(10)(Dave, Sean, Keith, John)
+* investigate results
+#### ONEstopDisco.ipynb
+* create JSON-LD from csv or xml(10)(Dave, Sean, Keith, John)
+* create sites.txt from list of files(5)(Dave, John)
 * upload JSON-LD to OneStop(10)(Dave, John)
-* discovery on OneStop(10)(Dave)
-* Questions(remainder)
 
-Citations(Keith, Sean)
+### Discovery on OneStop(10-15)(Dave)
+* outline OneStop features
+* investigate results
+
+#### Questions(remainder)
+
+#### Citations(Keith, Sean)
 MDeval
-MEWs
 OneStop
 Jupyter Notebooks
 ESIPhub
