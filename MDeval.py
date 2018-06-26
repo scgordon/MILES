@@ -1271,8 +1271,9 @@ def WriteGoogleSheets(SpreadsheetLocation):
         gauth.LocalWebserverAuth()
     elif gauth.access_token_expired:
         # Refresh them if expired
-        os.unlink("./mycreds.txt")
-        gauth.LocalWebserverAuth()
+        #os.unlink("./mycreds.txt")
+        gauth.Refresh()
+        #gauth.LocalWebserverAuth()
     else:
         # Initialize the saved creds
         gauth.Authorize()
