@@ -34,6 +34,7 @@ from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 from lxml import etree
 import sys
+from IPython.core.display import display, HTML
 
 
 csv.field_size_limit(sys.maxsize)
@@ -240,8 +241,8 @@ def writeCSV(DataDestination, EvaluatedDF, Concept=True):
 
 def conceptCounts(EvaluatedMetadataDF, Organization, Collection,
                   Dialect, DataDestination):
-    """requires a dataframe with concepts DF Can created be localKnownNodesEval,
-    XMLeval, or a simpleXpath. It is required for combineConceptCounts
+    """requires a dataframe with concepts DF Can created be ConceptEval,
+    . It is required for combineConceptCounts
     """
     DataDestinationDirectory = DataDestination[:DataDestination.rfind('/') + 1]
     os.makedirs(DataDestinationDirectory, exist_ok=True)
@@ -254,7 +255,7 @@ def conceptCounts(EvaluatedMetadataDF, Organization, Collection,
     occurrenceMatrix = occurrenceMatrix.fillna(0)
     occurrenceMatrix.columns.names = ['']
     occurrenceMatrix = pd.concat(
-        [dialectOccurrenceDF, occurrenceMatrix], axis=0, ignore_index=True)
+        [dialectOccurrenceDF, occurrenceMatrix], axis=0, ignore_index=True, sort=True)
     mid = occurrenceMatrix['Collection']
     mid2 = occurrenceMatrix['Record']
     occurrenceMatrix.drop(
@@ -1292,4 +1293,6 @@ def WriteGoogleSheets(SpreadsheetLocation):
     permission = test_file.InsertPermission(
         {'type': 'anyone', 'value': 'anyone', 'role': 'reader'})
 
-    print(test_file['alternateLink'])  # Display the sharable link.
+    hyperlink = (test_file['alternateLink'])  # Display the sharable link.
+    ReportURLstring = '<a href="' + str(hyperlink) +'">Report URL</a>'
+    display(HTML(ReportURLstring))
