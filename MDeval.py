@@ -24,6 +24,7 @@ you want to share
 import pandas as pd
 import csv
 import gzip
+import zipfile
 import os
 import shutil
 import requests
@@ -168,6 +169,7 @@ def conceptEval(
         return(ConceptDF)
 
 
+# function to interact with the Metadata Evaluation Web Service
 
 def XMLeval(MetadataLocation, Organization, Collection, Dialect):
     # eventually replaced with lxml functions
@@ -191,19 +193,33 @@ def XMLeval(MetadataLocation, Organization, Collection, Dialect):
     # Send metadata package, read the response into a dataframe
     url = 'http://metadig.nceas.ucsb.edu/metadata/evaluator'
     files = {'zipxml': open('./upload/metadata.zip', 'rb')}
-    r = requests.post(url, files=files, headers={"Accept-Encoding": "gzip"})
+    r = requests.post(url, files=files, headers={"Accept-Encoding": "zip"})
     r.raise_for_status()
-    EvaluatedMetadataDF = pd.read_csv(io.StringIO(r.text), quotechar='"')
-
+    z = zipfile.ZipFile(io.BytesIO(r.content))
+    z.extractall('./data/')
+    old_element = os.path.join('./data/', "AllNodes.csv")
+    new_element = os.path.join(
+        './data/', Organization, Collection +
+        '_' + Dialect + "_ElementEvaluated.csv"
+    )
+    os.rename(old_element, new_element)
+    old_concept = os.path.join('./data/', "KnownNodes.csv")
+    new_concept = os.path.join(
+        './data/', Organization, Collection +
+        '_' + Dialect + "_ConceptEvaluated.csv"
+    )
+    os.rename(old_concept, new_concept)
     """Change directories, delete upload directory and zip.
     Delete copied metadata.
     """
-
     shutil.rmtree('./upload')
 
     shutil.rmtree('./zip/')
 
-    return(EvaluatedMetadataDF)
+    print(
+        'Metadata evaluated. Results in the "./data/' +
+        Organization + '" directory.'
+    )
 
 # def ExcelRAD(EvaluatedMetadataDF,DataDestination)
 # def AddDialectDefinition(***)

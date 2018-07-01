@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+  <identifier identifierType="DOI">10.1016/j.ecoinf.2017.09.005</identifier>
+  <creators>
+    <creator>
+      <creatorName>Gordon, Sean</creatorName>
+      <givenName>Sean</givenName>
+      <familyName>Gordon</familyName>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">http://orcid.org/0000-0001-9050-6141</nameIdentifier>
+    </creator>
+    <creator>
+      <creatorName>Habermann, Ted</creatorName>
+      <givenName>Ted</givenName>
+      <familyName>Habermann</familyName>
+    </creator>
+  </creators>
+  <titles>
+    <title>The influence of community recommendations on metadata completeness</title>
+  </titles>
+  <publisher>Ecological Informatics</publisher>
+  <publicationYear>2018</publicationYear>
+  <resourceType resourceTypeGeneral="Text">JournalArticle</resourceType>
+  <alternateIdentifiers>
+    <alternateIdentifier alternateIdentifierType=""/>
+  </alternateIdentifiers>
+  <dates>
+    <date dateType="Issued">2018-01</date>
+    <date dateType="Updated">2018-01-12T16:50:30Z</date>
+  </dates>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="ISSN" relationType="IsPartOf">15749541</relatedIdentifier>
+  </relatedIdentifiers>
+  <version/>
+  <rightsList>
+    <rights rightsURI="http://www.elsevier.com/tdm/userlicense/1.0"/>
+  </rightsList>
+</resource>
