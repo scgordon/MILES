@@ -550,7 +550,8 @@ def collectionSpreadsheet(Organization, Collection, Dialect,
     as well as the concept counts csv for a collection
     """
     workbook = xlsxwriter.Workbook(
-        DataDestination, {'strings_to_numbers': True, 'strings_to_urls': False})
+        DataDestination,
+        {'strings_to_numbers': True, 'strings_to_urls': False})
     cell_format11 = workbook.add_format()
     cell_format11.set_num_format('0%')
     cell_format04 = workbook.add_format()
@@ -574,34 +575,30 @@ def collectionSpreadsheet(Organization, Collection, Dialect,
     XpathCounts.set_column('A:OD', 15)
     XpathContent = workbook.add_worksheet('XpathContent')
 
-    with gzip.open(EvaluatedXpaths, "rt", newline="") as f:
-        Reader = csv.reader(f, delimiter=',', quotechar='"')
-        row_count = 0
+    Reader = csv.reader(EvaluatedXpaths, delimiter=',', quotechar='"')
+    row_count = 0
 
-        for row in Reader:
-            for col in range(len(row)):
-                XpathContent.write(row_count, col, row[col])
-            row_count += 1
-    with gzip.open(EvaluatedXpaths, "rt", newline="") as f:
-        Reader = csv.reader(f, delimiter=',', quotechar='"')
-        row_count = 0
+    for row in Reader:
+        for col in range(len(row)):
+            XpathContent.write(row_count, col, row[col])
+        row_count += 1
+    Reader = csv.reader(EvaluatedXpaths, delimiter=',', quotechar='"')
+    row_count = 0
 
-        absRowCount = sum(1 for row in Reader)
-        XpathContent.autofilter(0, 0, absRowCount - 1, 3)
-    with gzip.open(EvaluatedConcepts, "rt", newline="") as f:
-        Reader = csv.reader(f, delimiter=',', quotechar='"')
-        row_count = 0
+    absRowCount = sum(1 for row in Reader)
+    XpathContent.autofilter(0, 0, absRowCount - 1, 3)
+    Reader = csv.reader(EvaluatedConcepts, delimiter=',', quotechar='"')
+    row_count = 0
 
-        for row in Reader:
-            for col in range(len(row)):
-                ConceptContent.write(row_count, col, row[col])
-            row_count += 1
-    with gzip.open(EvaluatedConcepts, "rt", newline="") as f:
-        Reader = csv.reader(f, delimiter=',', quotechar='"')
-        row_count = 0
-        absRowCount = sum(1 for row in Reader)
+    for row in Reader:
+        for col in range(len(row)):
+            ConceptContent.write(row_count, col, row[col])
+        row_count += 1
+    Reader = csv.reader(EvaluatedConcepts, delimiter=',', quotechar='"')
+    row_count = 0
+    absRowCount = sum(1 for row in Reader)
 
-        ConceptContent.autofilter(0, 0, absRowCount - 1, 5)
+    ConceptContent.autofilter(0, 0, absRowCount - 1, 5)
     # create a worksheet from the concept occurrence csv
     Reader = csv.reader(open(
         conceptOccurrence, 'r'), delimiter=',', quotechar='"')
