@@ -577,26 +577,26 @@ def collectionSpreadsheet(Organization, Collection, Dialect,
     XpathCounts.set_column('A:OD', 15)
     XpathContent = workbook.add_worksheet('XpathContent')
 
-    Reader = csv.reader(EvaluatedXpaths, delimiter=',', quotechar='"')
+    Reader = csv.reader(open(EvaluatedXpaths), delimiter=',', quotechar='"')
     row_count = 0
 
     for row in Reader:
         for col in range(len(row)):
             XpathContent.write(row_count, col, row[col])
         row_count += 1
-    Reader = csv.reader(EvaluatedXpaths, delimiter=',', quotechar='"')
+    Reader = csv.reader(open(EvaluatedXpaths), delimiter=',', quotechar='"')
     row_count = 0
 
     absRowCount = sum(1 for row in Reader)
     XpathContent.autofilter(0, 0, absRowCount - 1, 3)
-    Reader = csv.reader(EvaluatedConcepts, delimiter=',', quotechar='"')
+    Reader = csv.reader(open(EvaluatedConcepts), delimiter=',', quotechar='"')
     row_count = 0
 
     for row in Reader:
         for col in range(len(row)):
             ConceptContent.write(row_count, col, row[col])
         row_count += 1
-    Reader = csv.reader(EvaluatedConcepts, delimiter=',', quotechar='"')
+    Reader = csv.reader(open(EvaluatedConcepts), delimiter=',', quotechar='"')
     row_count = 0
     absRowCount = sum(1 for row in Reader)
 
