@@ -271,7 +271,9 @@ def conceptCounts(EvaluatedMetadataDF, Organization, Collection,
     occurrenceMatrix = occurrenceMatrix.fillna(0)
     occurrenceMatrix.columns.names = ['']
     occurrenceMatrix = pd.concat(
-        [dialectOccurrenceDF, occurrenceMatrix], axis=0, ignore_index=True, sort=True)
+        [dialectOccurrenceDF, occurrenceMatrix],
+        axis=0, ignore_index=True, sort=True
+    )
     mid = occurrenceMatrix['Collection']
     mid2 = occurrenceMatrix['Record']
     occurrenceMatrix.drop(
@@ -1307,5 +1309,45 @@ def WriteGoogleSheets(SpreadsheetLocation):
         {'type': 'anyone', 'value': 'anyone', 'role': 'reader'})
 
     hyperlink = (test_file['alternateLink'])  # Display the sharable link.
-    ReportURLstring = '<a href="' + str(hyperlink) +'">Report URL</a>'
+    ReportURLstring = '<a href="' + str(hyperlink) + '">Report URL</a>'
     display(HTML(ReportURLstring))
+
+
+def recordConceptContent(EvaluatedMetadataDF, Organization, Collection,
+                         Dialect, DataDestination):
+    """requires a dataframe with concepts DF Can created be ConceptEval,
+    . It is required for combineConceptCounts
+    """
+    DataDestinationDirectory = DataDestination[:DataDestination.rfind('/') + 1]
+    os.makedirs(DataDestinationDirectory, exist_ok=True)
+    EvaluatedMetadataDF = EvaluatedMetadataDF.applymap(str)
+    group_name = EvaluatedMetadataDF.groupby([
+        'Collection', 'Record', 'Concept'], as_index=False)
+    occurrenceMatrix = group_name['Content'].apply(
+        lambda x: '%s' % ', '.join(x)).unstack().reset_index()
+    dialectOccurrenceDF = pd.read_csv('./dialectContains.csv')
+    dialectOccurrenceDF = (dialectOccurrenceDF[
+        dialectOccurrenceDF['Concept'] == Dialect])
+    #occurrenceMatrix = occurrenceMatrix.fillna(0)
+    occurrenceMatrix.columns.names = ['']
+    occurrenceMatrix = pd.concat(
+        [dialectOccurrenceDF, occurrenceMatrix],
+        axis=0, ignore_index=True)  # , sort=True
+    # )
+    mid = occurrenceMatrix['Collection']
+    mid2 = occurrenceMatrix['Record']
+    occurrenceMatrix.drop(
+        labels=['Collection', 'Record', 'Concept'], axis=1, inplace=True)
+    occurrenceMatrix.insert(0, 'Collection', mid)
+    occurrenceMatrix.insert(0, 'Record', mid2)
+
+    dialectOccurrenceDF = pd.read_csv('./dialectContains.csv')
+    dialectOccurrenceDF = (
+        dialectOccurrenceDF[dialectOccurrenceDF['Concept'] == Dialect])
+    FILLvalues = dialectOccurrenceDF.to_dict('records')
+    FILLvalues = FILLvalues[0]
+    occurrenceMatrix = occurrenceMatrix.fillna(value=FILLvalues)
+    occurrenceMatrix.reset_index()
+    occurrenceMatrix = occurrenceMatrix.drop(occurrenceMatrix.index[0])
+    occurrenceMatrix.to_csv(DataDestination, mode='w', index=False)
+    return(occurrenceMatrix)    
