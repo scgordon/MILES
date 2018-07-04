@@ -7,10 +7,9 @@ NSF DIBBs projects. This python module as an outcome of DIBBs allows
 a user to initiate an evaluation of valid XML. If it is not a metadata
 standard that has not been ingested as a documentation language dialect
 in AllCrosswalks.xml, this XML can be evaluated using the XPath dataframe
-functions, but will get lumped together as the concept, "Unknown",
-in any of the concepts based evaluation. Other metadata standards can be
+functions. Other metadata standards can be
 conceptualized and added to the Concepts Evaluator. Then the module can be
-rebuilt and the recommendations analysis functions can be run
+rebuilt and the recommendations analysis functions can be run anew.
 
 Basic workflow is to retrieve records, evaluate for concept and xpath content,
 run concept/xpath counts and occurrence functions on csv output of evaluation,
@@ -23,13 +22,12 @@ you want to share
 
 import pandas as pd
 import csv
-import gzip
 import zipfile
+import glob
 import os
 import shutil
 import requests
 import io
-import subprocess
 import xlsxwriter
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
@@ -76,97 +74,20 @@ def get_records(urls, xml_files, well_formed=True):
             f.write(r.text)
 
 
-def elementEval(MetadataLocation,
-                Organization, Collection, Dialect, WebService=True):
-    """an easy way to control transform of the records
-    that you already have, whether you used get_records
-    or not, the output is prepared for the xpath functions workflow
-    any function with xpath in its name requires the output
-    of this function including:XMLeval, XpathCounts, QuickEDataProduct,
-    xpathOccurrence. These functions are required to use combine
-    xpath functions: CombineXPathOccurrence, CombineXPathCounts,
-    CombineAverageXPathOccurrencePerRecord. collectionSpreadsheet
-    and OrganizationSpreadsheet require the before mentioned functions
-    as well as the concept and combine concept functions.
-    """
-    if WebService is False:
-        subprocess.call(["./xmlTransform.sh", Organization, Collection,
-                         Dialect])
-    else:
-        MetadataDestination = os.path.join('./zip/', Organization,
-                                           Collection, Dialect, 'xml')
-        os.makedirs(MetadataDestination, exist_ok=True)
-        # os.makedirs(os.path.join('../data',Organization), exist_ok=True)
-        src_files = os.listdir(MetadataLocation)
-        for file_name in src_files:
-            full_file_name = os.path.join(MetadataLocation, file_name)
-            if (os.path.isfile(full_file_name)):
-                shutil.copy(full_file_name, MetadataDestination)
-        shutil.make_archive('./upload/metadata', 'zip', './zip/')
-
-        # Send metadata package, read the response into a dataframe
-        url = 'http://metadig.nceas.ucsb.edu/metadata/evaluator'
-        files = {'zipxml': open('./upload/metadata.zip', 'rb')}
-        r = requests.post(
-            url, files=files, headers={"Accept-Encoding": "gzip"}
-        )
-        r.raise_for_status()
-        ElementDF = pd.read_csv(io.StringIO(r.text), quotechar='"')
-
-        """Change directories, delete upload directory and zip.
-        Delete copied metadata.
-        """
-
-        shutil.rmtree('./upload')
-
-        shutil.rmtree('./zip/')
-
-        return(ElementDF)
+''' This function allows the user to unify the namespace location and
+if neccessary, the prefix.
+'''
 
 
-def conceptEval(
-    MetadataLocation, Organization,
-    Collection, Dialect, WebService=False
-):
-    """an easy way to control transform of the records
-    that you already have, whether you used get_records
-    or not, the output is prepared for the concept functions workflow
-    this is the more accurate and lightweight way
-    to query the collection for concepts
-    """
-    if WebService is False:
-        subprocess.call(["./conceptTransform.sh", Organization, Collection,
-                         Dialect])
-    if WebService is True:
-        MetadataDestination = os.path.join('./zip/', Organization,
-                                           Collection, Dialect, 'xml')
-        os.makedirs(MetadataDestination, exist_ok=True)
-        # os.makedirs(os.path.join('../data',Organization), exist_ok=True)
-        src_files = os.listdir(MetadataLocation)
-        for file_name in src_files:
-            full_file_name = os.path.join(MetadataLocation, file_name)
-            if (os.path.isfile(full_file_name)):
-                shutil.copy(full_file_name, MetadataDestination)
-        shutil.make_archive('./upload/metadata', 'zip', './zip/')
-
-        # Send metadata package, read the response into a dataframe
-        url = 'http://metadig.nceas.ucsb.edu/metadata/evaluator'
-        files = {'zipxml': open('./upload/metadata.zip', 'rb')}
-        r = requests.post(
-            url, files=files, headers={"Accept-Encoding": "gzip"}
-        )
-        r.raise_for_status()
-        ConceptDF = pd.read_csv(io.StringIO(r.text), quotechar='"')
-
-        """Change directories, delete upload directory and zip.
-        Delete copied metadata.
-        """
-
-        shutil.rmtree('./upload')
-
-        shutil.rmtree('./zip/')
-
-        return(ConceptDF)
+def normalizeNamespace(MetadataLocation,
+                       newNamespaceLocation, oldNamespaceLocation):
+    for filepath in glob.iglob(MetadataLocation + '/*.xml', recursive=True):
+        with open(filepath) as file:
+            s = file.read()
+        s = s.replace(oldNamespaceLocation, newNamespaceLocation)
+        with open(filepath, "w") as file:
+            file.write(s)
+        print(str(filepath) + ' is normalized')
 
 
 # function to interact with the Metadata Evaluation Web Service
@@ -221,36 +142,6 @@ def XMLeval(MetadataLocation, Organization, Collection, Dialect):
         Organization + '" directory.'
     )
 
-# def ExcelRAD(EvaluatedMetadataDF,DataDestination)
-# def AddDialectDefinition(***)
-# def AddDialect(***)
-# def AddRecommendation(****)
-# def JSONeval(****)
-# def QualitativeRecommendationsAnalysis(dataframe, RecTag)
-# def QuantitativeRecommendationsAnalysis(dataframe, RecTag)
-
-
-def writeCSV(DataDestination, EvaluatedDF, Concept=True):
-    """Use if you wanted to create a csv of simplified xpaths
-    instead of full. not recommended because the spreadsheet offers a
-    simplified and full view of the xpaths
-    """
-    if Concept is True:
-        EvaluatedDF.to_csv(
-            DataDestination,
-            index=False, compression='gzip',
-            columns=[
-                'Collection', 'Dialect', 'Record',
-                'Concept', 'XPath', 'Content'
-            ])
-    else:
-        EvaluatedDF.to_csv(
-            DataDestination,
-            index=False, compression='gzip',
-            columns=[
-                'Collection', 'Record',
-                'XPath', 'Content'
-            ])
 
 # Create a Recommendations Analysis data table
 
@@ -328,7 +219,7 @@ def conceptOccurrence(EvaluatedMetadataDF, Organization,
 
     result = pd.concat([occurrenceSum, occurrenceCount], axis=1).reset_index()
     result.insert(
-        1, 'Collection', Organization + '_' + Collection + '_' + Dialect
+        1, 'Collection', Organization + '_' + Collection
     )
     result.insert(4, 'CollectionOccurrence%', Collection + '_' + Dialect)
     result.insert(4, 'AverageOccurrencePerRecord', Collection + '_' + Dialect)
@@ -371,7 +262,7 @@ def xpathOccurrence(EvaluatedMetadataDF, Organization, Collection,
 
     result = pd.concat([occurrenceSum, occurrenceCount], axis=1).reset_index()
     result.insert(
-        1, 'Collection', Organization + '_' + Collection + '_' + Dialect)
+        1, 'Collection', Organization + '_' + Collection)
     result.insert(4, 'CollectionOccurrence%', Collection + '_' + Dialect)
     result.insert(4, 'AverageOccurrencePerRecord', Collection + '_' + Dialect)
     result.columns = [
@@ -570,12 +461,27 @@ def collectionSpreadsheet(Organization, Collection, Dialect,
     ConceptCounts = workbook.add_worksheet('ConceptCounts')
     ConceptContent = workbook.add_worksheet('ConceptContent')
     XpathOccurrence = workbook.add_worksheet('XpathOccurrence')
-    XpathOccurrence.set_column('A:A', 70)
-    ConceptOccurrence.set_column('A:A', 15)
-    ConceptCounts.set_column('A:OD', 15)
+    XpathOccurrence.set_column('A:A', 100)
+    XpathOccurrence.set_column('C:D', 20)
+    XpathOccurrence.set_column('E:E', 30)
+    XpathOccurrence.set_column('F:F', 25, cell_format11)
+    XpathOccurrence.set_column('B:B', 30)
+    ConceptOccurrence.set_column('B:B', 25)
+    ConceptOccurrence.set_column('C:D', 15)
+    ConceptOccurrence.set_column('E:E', 30)
+    ConceptOccurrence.set_column('F:F', 25, cell_format11)
+    ConceptOccurrence.set_column('A:A', 30)
+    ConceptCounts.set_column('A:OD', 20)
     XpathCounts = workbook.add_worksheet('XpathCounts')
-    XpathCounts.set_column('A:OD', 15)
+    XpathCounts.set_column('A:OD', 30)
     XpathContent = workbook.add_worksheet('XpathContent')
+    XpathContent.set_column('A:B', 30)
+    XpathContent.set_column('C:C', 100)
+    XpathContent.set_column('D:D', 20)
+    ConceptContent.set_column('A:C', 25)
+    ConceptContent.set_column('D:D', 30)
+    ConceptContent.set_column('E:E', 70)
+    ConceptContent.set_column('F:F', 20)
 
     Reader = csv.reader(open(EvaluatedXpaths), delimiter=',', quotechar='"')
     row_count = 0
@@ -620,8 +526,6 @@ def collectionSpreadsheet(Organization, Collection, Dialect,
     ConceptOccurrence.conditional_format(
         2, 5, absRowCount - 1, 5,
         {'type': 'cell', 'criteria': '>=', 'value': 1, 'format': formatGreen})
-    ConceptOccurrence.set_column('F:F', 20, cell_format11)
-    XpathOccurrence.set_column('F:F', 20, cell_format11)
 
     ConceptOccurrence.conditional_format(
         2, 5, absRowCount - 1, 5,
@@ -1287,9 +1191,8 @@ def WriteGoogleSheets(SpreadsheetLocation):
         gauth.LocalWebserverAuth()
     elif gauth.access_token_expired:
         # Refresh them if expired
-        #os.unlink("./mycreds.txt")
         gauth.Refresh()
-        #gauth.LocalWebserverAuth()
+
     else:
         # Initialize the saved creds
         gauth.Authorize()
@@ -1328,12 +1231,11 @@ def recordConceptContent(EvaluatedMetadataDF, Organization, Collection,
     dialectOccurrenceDF = pd.read_csv('./dialectContains.csv')
     dialectOccurrenceDF = (dialectOccurrenceDF[
         dialectOccurrenceDF['Concept'] == Dialect])
-    #occurrenceMatrix = occurrenceMatrix.fillna(0)
     occurrenceMatrix.columns.names = ['']
     occurrenceMatrix = pd.concat(
         [dialectOccurrenceDF, occurrenceMatrix],
-        axis=0, ignore_index=True)  # , sort=True
-    # )
+        axis=0, ignore_index=True, sort=True
+    )
     mid = occurrenceMatrix['Collection']
     mid2 = occurrenceMatrix['Record']
     occurrenceMatrix.drop(
@@ -1350,4 +1252,4 @@ def recordConceptContent(EvaluatedMetadataDF, Organization, Collection,
     occurrenceMatrix.reset_index()
     occurrenceMatrix = occurrenceMatrix.drop(occurrenceMatrix.index[0])
     occurrenceMatrix.to_csv(DataDestination, mode='w', index=False)
-    return(occurrenceMatrix)    
+    return(occurrenceMatrix)
