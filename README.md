@@ -1,7 +1,9 @@
 # MILES 
 ## Metadata Improvement Lab at ESIP: schema.org
 
-###  Overview of session
+### Presentations
+
+#####  Overview of session
 * What is the schema.org vocabulary
 * What is JSON-LD
 * NOAA's experience
@@ -10,27 +12,26 @@
 * Create JSON-LD
 * Google's Structured Data Testing Tool
 
-
-### Presentation on NOAA's work with JSON-LD using the schema.org vocabulary
+##### Presentation on NOAA's work with JSON-LD using the schema.org vocabulary
 * https://docs.google.com/presentation/d/1tuA24Xir10nTvn9bVHpI6y-NVydjRaOWWuqNNvn6zsA/edit
 
-### JupyterLab on ESIPhub tutorial
+##### JupyterLab on ESIPhub tutorial
 * (todo)
 * *cheetsheet and lightning presentations needed*
 
 ### Notebooks
 
-##### [Upload and Prepare a Metadata Collection for Evaluation](./MILES/Upload%20and%20Prepare%20a%20Metadata%20Collection%20for%20Evaluation.ipynb)
-* How you can use JupyterLab's GUI to upload a metadata record or a zip of many records and move the metadata to a directory
+##### [Upload and Prepare a Metadata Collection for Evaluation](./00.CreateMetadataCollection.ipynb)
+* How you can use JupyterLab's GUI to upload a local metadata record or a zip of many records and move the metadata to a directory
 * Download a metadata collection from a repository or other URL
 * normalize namespace location so concepts can be read accurately by the Metadata Evaluation Web Service
 
-##### [Create Recommendation Report for a Metadata Collection](./Create%20Recommendation%20Report%20for%20a%20Metadata%20Collection%20.ipynb)
+##### [Create Recommendation Report for a Metadata Collection](./01.CreateRecReport.ipynb)
 * evaluate metadata for concepts and xpaths
 * Create data about the collection's concepts and xpaths
 * create collection reports on data in Excel and Google Sheets
 
-##### [Create JSON-LD for Datasets Using the schema.org Vocabulary and Test the Results](./Create%20JSON-LD%20for%20Datasets%20Using%20the%20schema.org%20Vocabulary%20and%20Test%20the%20Results.ipynb)
+##### [Create JSON-LD for Datasets Using the schema.org Vocabulary and Test the Results](./02.CreateJSON-LD.ipynb)
 * Create csv with recommendation concept content for the collection 
 * translate concept names into the schema.org vocabulary
 * create valid JSON-LD for a record
