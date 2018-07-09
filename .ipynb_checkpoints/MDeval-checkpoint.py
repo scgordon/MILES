@@ -24,6 +24,7 @@ you want to share
 import pandas as pd
 import csv
 import gzip
+import zipfile
 import os
 import shutil
 import requests
@@ -34,6 +35,8 @@ from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 from lxml import etree
 import sys
+from IPython.core.display import display, HTML
+
 
 csv.field_size_limit(sys.maxsize)
 
@@ -73,7 +76,8 @@ def get_records(urls, xml_files, well_formed=True):
             f.write(r.text)
 
 
-def localAllNodesEval(MetadataLocation, Organization, Collection, Dialect):
+def elementEval(MetadataLocation,
+                Organization, Collection, Dialect, WebService=True):
     """an easy way to control transform of the records
     that you already have, whether you used get_records
     or not, the output is prepared for the xpath functions workflow
@@ -85,20 +89,85 @@ def localAllNodesEval(MetadataLocation, Organization, Collection, Dialect):
     and OrganizationSpreadsheet require the before mentioned functions
     as well as the concept and combine concept functions.
     """
-    subprocess.call(["./xmlTransform.sh", Organization, Collection,
-                     Dialect])
-    print('stuff')
+    if WebService is False:
+        subprocess.call(["./xmlTransform.sh", Organization, Collection,
+                         Dialect])
+    else:
+        MetadataDestination = os.path.join('./zip/', Organization,
+                                           Collection, Dialect, 'xml')
+        os.makedirs(MetadataDestination, exist_ok=True)
+        # os.makedirs(os.path.join('../data',Organization), exist_ok=True)
+        src_files = os.listdir(MetadataLocation)
+        for file_name in src_files:
+            full_file_name = os.path.join(MetadataLocation, file_name)
+            if (os.path.isfile(full_file_name)):
+                shutil.copy(full_file_name, MetadataDestination)
+        shutil.make_archive('./upload/metadata', 'zip', './zip/')
+
+        # Send metadata package, read the response into a dataframe
+        url = 'http://metadig.nceas.ucsb.edu/metadata/evaluator'
+        files = {'zipxml': open('./upload/metadata.zip', 'rb')}
+        r = requests.post(
+            url, files=files, headers={"Accept-Encoding": "gzip"}
+        )
+        r.raise_for_status()
+        ElementDF = pd.read_csv(io.StringIO(r.text), quotechar='"')
+
+        """Change directories, delete upload directory and zip.
+        Delete copied metadata.
+        """
+
+        shutil.rmtree('./upload')
+
+        shutil.rmtree('./zip/')
+
+        return(ElementDF)
 
 
-def localKnownNodesEval(MetadataLocation, Organization, Collection, Dialect):
+def conceptEval(
+    MetadataLocation, Organization,
+    Collection, Dialect, WebService=False
+):
     """an easy way to control transform of the records
     that you already have, whether you used get_records
     or not, the output is prepared for the concept functions workflow
     this is the more accurate and lightweight way
     to query the collection for concepts
     """
-    subprocess.call(["./conceptTransform.sh", Organization, Collection,
-                     Dialect])
+    if WebService is False:
+        subprocess.call(["./conceptTransform.sh", Organization, Collection,
+                         Dialect])
+    if WebService is True:
+        MetadataDestination = os.path.join('./zip/', Organization,
+                                           Collection, Dialect, 'xml')
+        os.makedirs(MetadataDestination, exist_ok=True)
+        # os.makedirs(os.path.join('../data',Organization), exist_ok=True)
+        src_files = os.listdir(MetadataLocation)
+        for file_name in src_files:
+            full_file_name = os.path.join(MetadataLocation, file_name)
+            if (os.path.isfile(full_file_name)):
+                shutil.copy(full_file_name, MetadataDestination)
+        shutil.make_archive('./upload/metadata', 'zip', './zip/')
+
+        # Send metadata package, read the response into a dataframe
+        url = 'http://metadig.nceas.ucsb.edu/metadata/evaluator'
+        files = {'zipxml': open('./upload/metadata.zip', 'rb')}
+        r = requests.post(
+            url, files=files, headers={"Accept-Encoding": "gzip"}
+        )
+        r.raise_for_status()
+        ConceptDF = pd.read_csv(io.StringIO(r.text), quotechar='"')
+
+        """Change directories, delete upload directory and zip.
+        Delete copied metadata.
+        """
+
+        shutil.rmtree('./upload')
+
+        shutil.rmtree('./zip/')
+
+        return(ConceptDF)
+
 
 
 def XMLeval(MetadataLocation, Organization, Collection, Dialect):
@@ -123,19 +192,22 @@ def XMLeval(MetadataLocation, Organization, Collection, Dialect):
     # Send metadata package, read the response into a dataframe
     url = 'http://metadig.nceas.ucsb.edu/metadata/evaluator'
     files = {'zipxml': open('./upload/metadata.zip', 'rb')}
-    r = requests.post(url, files=files, headers={"Accept-Encoding": "gzip"})
+    r = requests.post(url, files=files, headers={"Accept-Encoding": "zip"})
     r.raise_for_status()
-    EvaluatedMetadataDF = pd.read_csv(io.StringIO(r.text), quotechar='"')
+    z = zipfile.ZipFile(io.BytesIO(r.content))
+    z.extractall()
+    # EvaluatedMetadataDF = pd.read_csv(io.StringIO(r.text), quotechar='"')
 
     """Change directories, delete upload directory and zip.
     Delete copied metadata.
     """
+    #import gzip
+    #gzip.open(r.text(), mode='rb', compresslevel=9, encoding=None, errors=None, newline=None)
+    #shutil.rmtree('./upload')
 
-    shutil.rmtree('./upload')
+    #shutil.rmtree('./zip/')
 
-    shutil.rmtree('./zip/')
-
-    return(EvaluatedMetadataDF)
+    return(r)
 
 # def ExcelRAD(EvaluatedMetadataDF,DataDestination)
 # def AddDialectDefinition(***)
@@ -146,79 +218,35 @@ def XMLeval(MetadataLocation, Organization, Collection, Dialect):
 # def QuantitativeRecommendationsAnalysis(dataframe, RecTag)
 
 
-def EvaluatedDatatable(EvaluatedMetadataDF, DataDestination):
+def writeCSV(DataDestination, EvaluatedDF, Concept=True):
     """Use if you wanted to create a csv of simplified xpaths
     instead of full. not recommended because the spreadsheet offers a
     simplified and full view of the xpaths
     """
-    EvaluatedMetadataDF.to_csv(
-        DataDestination,
-        index=False, compression='gzip',
-        columns=[
-            'Collection', 'Dialect', 'Record',
-            'Concept', 'XPath', 'Content'
-        ])
+    if Concept is True:
+        EvaluatedDF.to_csv(
+            DataDestination,
+            index=False, compression='gzip',
+            columns=[
+                'Collection', 'Dialect', 'Record',
+                'Concept', 'XPath', 'Content'
+            ])
+    else:
+        EvaluatedDF.to_csv(
+            DataDestination,
+            index=False, compression='gzip',
+            columns=[
+                'Collection', 'Record',
+                'XPath', 'Content'
+            ])
 
-    return(EvaluatedMetadataDF)
-
-
-"""Optional simplify functions,
-probably better to let the spreadsheet create the simplified element view
-"""
-
-
-def simpleXPathISO(EvaluatedMetadataDF):
-    """ Create a simplified XPath output add a column for declaring
-    the collection and dialect to uniquely identify data in combined data
-    products. Used after XMLeval, localAllNodes or localKnownNodes
-    """
-
-    EvaluatedMetadataDF['XPath'] = EvaluatedMetadataDF['XPath'].str.replace(
-        '/gco:CharacterString', '')
-    EvaluatedMetadataDF['XPath'] = EvaluatedMetadataDF['XPath'].str.replace(
-        '/[a-z]+:+?', '/')
-    EvaluatedMetadataDF['XPath'] = EvaluatedMetadataDF['XPath'].str.replace(
-        '/@[a-z]+:+?', '/@')
-    EvaluatedMetadataDF['XPath'] = EvaluatedMetadataDF['XPath'].str.replace(
-        '/[A-Z]+_[A-Za-z]+/?', '/')
-    EvaluatedMetadataDF['XPath'] = EvaluatedMetadataDF['XPath'].str.replace(
-        '//', '/')
-    EvaluatedMetadataDF['XPath'] = EvaluatedMetadataDF['XPath'].str.rstrip(
-        '//')
-    return(EvaluatedMetadataDF)
-
-
-def simpleXPathRe3data(EvaluatedMetadataDF):
-    """Create a simplified XPath output for any dataFrame with an XPath column
-replacements below used to simplify the re3data xPaths.
-Important to consider a test on root so that one simpleXPath function
-can get used on any data table
-
-examples
-/r3d:re3data/r3d:repository/r3d:providerType
-/r3d:re3data/r3d:repository/r3d:keyword
-/r3d:re3data/r3d:repository/r3d:institution/r3d:institutionName
-
-becomes
-providerType
-keyword
-institutionName
-"""
-    EvaluatedMetadataDF['XPath'] = EvaluatedMetadataDF['XPath'].str.replace(
-        '/r3d:re3data/r3d:repository/r3d:', '')
-    EvaluatedMetadataDF['XPath'] = EvaluatedMetadataDF['XPath'].str.replace(
-        'r3d:', '')
-
-    return(EvaluatedMetadataDF)
-
-
-# Create a Recommendations Analysis data product
+# Create a Recommendations Analysis data table
 
 
 def conceptCounts(EvaluatedMetadataDF, Organization, Collection,
                   Dialect, DataDestination):
-    """requires a dataframe with concepts DF Can created be localKnownNodesEval,
-    XMLeval, or a simpleXpath. It is required for combineConceptCounts
+    """requires a dataframe with concepts DF Can created be ConceptEval,
+    . It is required for combineConceptCounts
     """
     DataDestinationDirectory = DataDestination[:DataDestination.rfind('/') + 1]
     os.makedirs(DataDestinationDirectory, exist_ok=True)
@@ -231,7 +259,7 @@ def conceptCounts(EvaluatedMetadataDF, Organization, Collection,
     occurrenceMatrix = occurrenceMatrix.fillna(0)
     occurrenceMatrix.columns.names = ['']
     occurrenceMatrix = pd.concat(
-        [dialectOccurrenceDF, occurrenceMatrix], axis=0, ignore_index=True)
+        [dialectOccurrenceDF, occurrenceMatrix], axis=0, ignore_index=True, sort=True)
     mid = occurrenceMatrix['Collection']
     mid2 = occurrenceMatrix['Record']
     occurrenceMatrix.drop(
@@ -509,9 +537,8 @@ def collectionSpreadsheet(Organization, Collection, Dialect,
     """requires xpath and concept occurrence,
     as well as the concept counts csv for a collection
     """
-    os.makedirs('../reports/' + Organization, exist_ok=True)
     workbook = xlsxwriter.Workbook(
-        DataDestination, {'strings_to_numbers': True})
+        DataDestination, {'strings_to_numbers': True, 'strings_to_urls': False})
     cell_format11 = workbook.add_format()
     cell_format11.set_num_format('0%')
     cell_format04 = workbook.add_format()
@@ -1247,9 +1274,11 @@ def WriteGoogleSheets(SpreadsheetLocation):
     if gauth.credentials is None:
         # Authenticate if they're not there
         gauth.LocalWebserverAuth()
-    elif gauth.credentials.invalid:
+    elif gauth.access_token_expired:
         # Refresh them if expired
-        gauth.Refresh('./mycreds.txt')
+        #os.unlink("./mycreds.txt")
+        gauth.Refresh()
+        #gauth.LocalWebserverAuth()
     else:
         # Initialize the saved creds
         gauth.Authorize()
@@ -1268,4 +1297,6 @@ def WriteGoogleSheets(SpreadsheetLocation):
     permission = test_file.InsertPermission(
         {'type': 'anyone', 'value': 'anyone', 'role': 'reader'})
 
-    print(test_file['alternateLink'])  # Display the sharable link.
+    hyperlink = (test_file['alternateLink'])  # Display the sharable link.
+    ReportURLstring = '<a href="' + str(hyperlink) +'">Report URL</a>'
+    display(HTML(ReportURLstring))

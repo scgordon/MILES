@@ -21,7 +21,7 @@
 
 ### Notebooks
 
-##### [Upload and Prepare a Metadata Collection for Evaluation](./00.CreateMetadataCollection.ipynb)
+##### [Ingest and Prepare a Metadata Collection for Evaluation](./00.CreateMetadataCollection.ipynb)
 * How you can use JupyterLab's GUI to upload a local metadata record or a zip of many records and move the metadata to a directory
 * Download a metadata collection from a repository or other URL
 * normalize namespace location so concepts can be read accurately by the Metadata Evaluation Web Service
