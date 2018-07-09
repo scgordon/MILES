@@ -93,17 +93,10 @@ def normalizeNamespace(MetadataLocation,
 # function to interact with the Metadata Evaluation Web Service
 
 def XMLeval(MetadataLocation, Organization, Collection, Dialect):
-    # eventually replaced with lxml functions
-    """use vm to get old style combine
-    and fill nans with 'unknown' the output of
-    this function can be used with the concept functions
-    I would not use unless approximate numbers were enough
-    and I was an anonymous user. Should change on vm...
-    """
+
     MetadataDestination = os.path.join('./zip/', Organization,
                                        Collection, Dialect, 'xml')
     os.makedirs(MetadataDestination, exist_ok=True)
-    # os.makedirs(os.path.join('../data',Organization), exist_ok=True)
     src_files = os.listdir(MetadataLocation)
     for file_name in src_files:
         full_file_name = os.path.join(MetadataLocation, file_name)
@@ -148,8 +141,8 @@ def XMLeval(MetadataLocation, Organization, Collection, Dialect):
 
 def conceptCounts(EvaluatedMetadataDF, Organization, Collection,
                   Dialect, DataDestination):
-    """requires a dataframe with concepts DF Can created be ConceptEval,
-    . It is required for combineConceptCounts
+    """requires a dataframe with concepts DF Can created by xmlEval.
+    It is required for combineConceptCounts, collectionSpreadsheet
     """
     DataDestinationDirectory = DataDestination[:DataDestination.rfind('/') + 1]
     os.makedirs(DataDestinationDirectory, exist_ok=True)
@@ -1216,14 +1209,13 @@ def WriteGoogleSheets(SpreadsheetLocation):
     display(HTML(ReportURLstring))
 
 
-def recordConceptContent(EvaluatedMetadataDF, Organization, Collection,
-                         Dialect, DataDestination):
-    """requires a dataframe with concepts DF Can created be ConceptEval,
-    . It is required for combineConceptCounts
+def recordConceptContent(EvaluatedMetadataDF):
+    """requires a dataframe with concepts. Creates a vertical view of
+    concept content for each record in the collection. Useful in the
+    creation of json.
     """
-    DataDestinationDirectory = DataDestination[:DataDestination.rfind('/') + 1]
-    os.makedirs(DataDestinationDirectory, exist_ok=True)
     EvaluatedMetadataDF = EvaluatedMetadataDF.applymap(str)
+    Dialect = EvaluatedMetadataDF.at[1, 'Dialect']
     group_name = EvaluatedMetadataDF.groupby([
         'Collection', 'Record', 'Concept'], as_index=False)
     occurrenceMatrix = group_name['Content'].apply(
@@ -1234,7 +1226,7 @@ def recordConceptContent(EvaluatedMetadataDF, Organization, Collection,
     occurrenceMatrix.columns.names = ['']
     occurrenceMatrix = pd.concat(
         [dialectOccurrenceDF, occurrenceMatrix],
-        axis=0, ignore_index=True, sort=True
+        axis=0, ignore_index=True #, sort=True
     )
     mid = occurrenceMatrix['Collection']
     mid2 = occurrenceMatrix['Record']
@@ -1251,5 +1243,27 @@ def recordConceptContent(EvaluatedMetadataDF, Organization, Collection,
     occurrenceMatrix = occurrenceMatrix.fillna(value=FILLvalues)
     occurrenceMatrix.reset_index()
     occurrenceMatrix = occurrenceMatrix.drop(occurrenceMatrix.index[0])
-    occurrenceMatrix.to_csv(DataDestination, mode='w', index=False)
+
+    return(occurrenceMatrix)
+
+
+def recordXpathContent(EvaluatedMetadataDF):
+    """requires a dataframe with elements. Creates a vertical view of
+    concept content for each record in the collection. Useful in the
+    creation of json.
+    """
+    EvaluatedMetadataDF = EvaluatedMetadataDF.applymap(str)
+
+    group_name = EvaluatedMetadataDF.groupby([
+        'Collection', 'Record', 'XPath'], as_index=False)
+    occurrenceMatrix = group_name['Content'].apply(
+        lambda x: '%s' % ', '.join(x)).unstack().reset_index()
+
+    occurrenceMatrix.columns.names = ['']
+
+    FILLvalues = 'Content is Missing'
+    occurrenceMatrix = occurrenceMatrix.fillna(value=FILLvalues)
+    occurrenceMatrix.reset_index()
+    #occurrenceMatrix = occurrenceMatrix.drop(occurrenceMatrix.index[0])
+
     return(occurrenceMatrix)
