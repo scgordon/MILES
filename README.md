@@ -6,18 +6,36 @@
 #####  Overview of session
 * What is the schema.org vocabulary
 * What is JSON-LD
-* NOAA's experience
-* ESIPhub
-* Evaluation and Guidance Reports
+* NOAA's experience implementing them
+* What you need to do to your site
+* Using ESIPhub
+* Metadata upload and prep
+* Evaluation and Analysis 
+* Guidance Reports
 * Create JSON-LD
 * Google's Structured Data Testing Tool
+* Create your own dialect specific translation
 
-##### Presentation on NOAA's work with JSON-LD using the schema.org vocabulary
+##### Presentation on Schema.org Metadata: NOAA Implementation Status
 * https://docs.google.com/presentation/d/1tuA24Xir10nTvn9bVHpI6y-NVydjRaOWWuqNNvn6zsA/edit
 
 ##### JupyterLab on ESIPhub tutorial
-* (todo)
-* *cheetsheet and lightning presentations needed*
+* [ESIPhub Quickstart](shared/Quickstart.md)
+* html rendering of markdown files
+* esiphub slack, jupyter slack channels
+* logging in
+* starting a terminal or Notebook
+* navigate the file structure
+* Difference between cell types
+* running a cell
+* altering a cell
+* clearing the variables and restarting the kernel
+* running all cells
+* copying a Notebook
+* copy a directory/file from /shared/2018_summer_workshops
+    * cp -r shared/2018_summer_workshops/MILES MILES
+* Share your own ideas    
+* Other uses for the /shared directory
 
 ### Notebooks
 
@@ -28,6 +46,7 @@
 
 ##### [Create Recommendation Report for a Metadata Collection](./01.CreateRecReport.ipynb)
 * evaluate metadata for concepts and xpaths
+* refine the conceptual evaluation with a recommendation
 * Create data about the collection's concepts and xpaths
 * create collection reports on data in Excel and Google Sheets
 
@@ -46,3 +65,4 @@
 * Jupyter Notebooks
 * JupyterHub
 * ESIPhub
+* [Google's recommendation for datasets using schema.org](https://developers.google.com/search/docs/data-types/dataset)
