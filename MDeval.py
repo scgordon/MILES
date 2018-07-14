@@ -156,7 +156,7 @@ def conceptCounts(EvaluatedMetadataDF, Organization, Collection,
     occurrenceMatrix.columns.names = ['']
     occurrenceMatrix = pd.concat(
         [dialectOccurrenceDF, occurrenceMatrix],
-        axis=0, ignore_index=True, sort=True
+        axis=0, ignore_index=True, #sort=True
     )
     mid = occurrenceMatrix['Collection']
     mid2 = occurrenceMatrix['Record']
