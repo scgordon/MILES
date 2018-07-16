@@ -34,19 +34,20 @@
 * Use Google's [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/) to test results
 
 ##### [Create JSON-LD for Xpath Evaluation of Dataset Metadata Using the schema.org Vocabulary and Test the Results](./02.CreateJSON-LD.ipynb)
-* Create csv with recommendation concept content for the collection 
-* translate concept names into the schema.org vocabulary
+* Create csv with xpath content for the collection 
+* translate xpaths into the schema.org vocabulary
 * create valid JSON-LD for a record
-* create your own 
+* create your own vocabulary choices in the record output
 * Use Google's [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/) to test results
 
 ## Discussion / Questions / self-guided exploration
 
 ##### Citations
-* MDeval
-* Metadata Evaluation WebService
-* Python packages
-* JupyterLab
-* JupyterHub
-* ESIPhub
-* [Google's recommendation for datasets using schema.org](https://developers.google.com/search/docs/data-types/dataset)
+* ESIPhub: Supporting Interactive Geoscience Workshops. (2018). HCL, National Data Service. Retrieved from https://github.com/nds-org/esiphub (Original work published 2018)
+* Gordon, S. (2018). MILES: Metadata Improvement Lab at ESIP: schema.org for datasets. Python. Retrieved from https://github.com/scgordon/MILES (Original work published 2018)
+* Gordon, S., Jelenak, A., & Habermann, T. (2018). MDeval: Python module for xml metadata analysis and reporting (Version .10). Retrieved from https://github.com/scgordon/MDeval (Original work published 2018)
+* Jelenak, A., Gordon, S., & Habermann, T. (2017). Metadata Evaluation Web Service. Retrieved July 16, 2018, from http://metadig.nceas.ucsb.edu/metadata/evaluator
+* JupyterHub — JupyterHub 0.9.1 documentation. (n.d.). Retrieved July 15, 2018, from https://jupyterhub.readthedocs.io/en/stable/
+* JupyterLab Documentation — JupyterLab 1.0 Beta documentation. (n.d.). Retrieved July 15, 2018, from http://jupyterlab.readthedocs.io/en/stable/
+* Structured Data Testing Tool. (n.d.). Retrieved July 16, 2018, from https://search.google.com/structured-data/testing-tool/u/0/
+
