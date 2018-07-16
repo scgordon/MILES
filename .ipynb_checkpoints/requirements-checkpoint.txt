@@ -1,0 +1,17 @@
+xlsxwriter>=1.0.5
+pandas
+hone==0.1.4
+pydrive>=1.3.1 
+os
+IPython.display
+ipywidgets
+zipfile
+csv
+glob
+shutil
+requests
+io
+lxml
+sys
+IPython.core.display import display, HTML
+
