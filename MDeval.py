@@ -11,12 +11,12 @@ functions. Other metadata standards can be
 conceptualized and added to the Concepts Evaluator. Then the module can be
 rebuilt and the recommendations analysis functions can be run anew.
 
-Basic workflow is to retrieve records, evaluate for concept and xpath content,
+The basic workflow is to retrieve records, evaluate for concept and xpath content,
 run concept/xpath counts and occurrence functions on csv output of evaluation,
 create collectionspreadsheet with the outputs, if you want to compare between
 collections, combine csv outputs with appropriate combination functions, create
 organizationSpreadsheet. Finally run WriteGoogleSheets on any xlsx outputs
-you want to share
+you want to share.
 """
 
 
