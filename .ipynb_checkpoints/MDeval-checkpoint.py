@@ -114,7 +114,7 @@ def XMLeval(MetadataLocation, Organization, Collection, Dialect):
     old_element = os.path.join('./data/', "AllNodes.csv")
     new_element = os.path.join(
         './data/', Organization, Collection +
-        '_' + Dialect + "_ElementEvaluated.csv"
+        '_' + Dialect + "_XpathEvaluated.csv"
     )
     os.rename(old_element, new_element)
     old_concept = os.path.join('./data/', "KnownNodes.csv")

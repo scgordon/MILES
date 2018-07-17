@@ -42,7 +42,8 @@
 
 ## Discussion / Questions / self-guided exploration
 
-##### Citations
+#### Bibliography
+
 * ESIPhub: Supporting Interactive Geoscience Workshops. (2018). HCL, National Data Service. Retrieved from https://github.com/nds-org/esiphub (Original work published 2018)
 * Gordon, S. (2018). MILES: Metadata Improvement Lab at ESIP: schema.org for datasets. Python. Retrieved from https://github.com/scgordon/MILES (Original work published 2018)
 * Gordon, S., Jelenak, A., & Habermann, T. (2018). MDeval: Python module for xml metadata analysis and reporting (Version .10). Retrieved from https://github.com/scgordon/MDeval (Original work published 2018)
