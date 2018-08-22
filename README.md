@@ -4,14 +4,14 @@
 ## Presentations
 
 #####  Overview of session
-* [Slides](add sched links)
+* [Slides](https://schd.ws/hosted_files/2018esipsummermeeting/ab/MILESsessionOverview.pptx)
 
 ##### Presentation on Schema.org Metadata: NOAA Implementation Status
 * [Slides](https://docs.google.com/presentation/d/1tuA24Xir10nTvn9bVHpI6y-NVydjRaOWWuqNNvn6zsA/edit)
 
 ##### JupyterLab on ESIPhub tutorial
 * [ESIPhub Quickstart](shared/Quickstart.md)
-* [Slides](add sched link, then change to figshare?)
+* [Slides](https://schd.ws/hosted_files/2018esipsummermeeting/b4/ESIPhubQuickStart.pptx)
 
 ## Workshop
 ### Notebooks
