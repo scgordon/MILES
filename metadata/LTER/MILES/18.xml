@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-nwt.31.14" scope="system"
+  system="https://pasta.edirepository.org"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=nwt,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>uid=hhumphries,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/ce14cc421d7aad613c3dbd5c23f01da7</alternateIdentifier>
+    <title>Snow depth data for Saddle grid, 1992 - ongoing</title>
+    <creator id="nwtlter">
+      <organizationName>Niwot Ridge LTER</organizationName>
+      <address>
+        <deliveryPoint>4001 Discovery Drive, UCB 450</deliveryPoint>
+        <deliveryPoint>University of Colorado</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>CO</administrativeArea>
+        <postalCode>80303</postalCode>
+        <country>United States</country>
+      </address>
+      <onlineUrl>http://niwot.colorado.edu/</onlineUrl>
+    </creator>
+    <creator scope="document">
+      <individualName>
+        <givenName>Donald (Skip)</givenName>
+        <surName>Walker</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>PO Box 757000</deliveryPoint>
+        <city>Fairbanks</city>
+        <administrativeArea>Alaska</administrativeArea>
+        <postalCode>99775-6780</postalCode>
+        <country>UNITED STATES</country>
+      </address>
+      <phone phonetype="business">(907)474-2460</phone>
+    </creator>
+    <pubDate>1993</pubDate>
+    <abstract>
+      <para>The depth of snow was measured at 88 points on the saddle grid. The 500 x 350 m study area (17.5 ha) consisted of a grid of 8 rows of stakes in an east/west direction and 11 rows of stakes in a north/south direction (for a total of 88 stakes). The stakes were located 50 m apart. Each stake was given a point identification number starting with 1 in the southwest corner and progressing in an easterly direction for each of the east/west rows so that if head of this file represented the north compass point and the tail represented the south compass point, then the grid would look like this:
+		71   72   73   74   75   76   77   78   79   80   801(=80A)
+		61   62   63   64   65   66   67   68   69   70   701(=70A)
+		51   52   53   54   55   56   57   58   59   60   601(=60A)
+		41   42   43   44   45   46   47   48   49   50   501(=50A)
+		31   32   33   34   35   36   37   38   39   40   401(=40A)
+		21   22   23   24   25   26   27   28   29   30   301(=30A)
+		11   12   13   14   15   16   17   18   19   20   201(=20A)
+		 1    2    3    4    5    6    7    8    9   10   101(=10A)</para>
+    </abstract>
+    <keywordSet>
+      <keyword>snow depth</keyword>
+      <keyword>snowpack</keyword>
+      <keyword>snow accumulation</keyword>
+      <keyword>snowmelt</keyword>
+      <keyword>Saddle grid</keyword>
+      <keyword>snow survey</keyword>
+      <keyword>meteorology</keyword>
+      <keyword>climatology</keyword>
+      <keyword>hydrology</keyword>
+      <keyword>long term</keyword>
+      <keyword>NWT</keyword>
+      <keyword>Niwot Ridge LTER</keyword>
+    </keywordSet>
+    <intellectualRights>
+      <para>Data Use Agreement:</para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para>Use our data freely. All Niwot LTER data products (except some recent data sets for which metadata but not data are available) are released to the public and may be freely copied, distributed, edited, remixed, and built upon under the condition that you provide acknowledgement as described below.</para>
+          </listitem>
+          <listitem>
+            <para>Give proper acknowledgement. Publications, models and data products that make use of these data sets must include proper acknowledgement, including citing data sets in a similar way to citing a journal article. See http://www.datacite.org/whycitedata). The following acknowledgment should accompany any publication or citation of these data: Logistical support and/or data were provided by the NSF supported Niwot Ridge Long-Term Ecological Research project and the University of Colorado Mountain Research Station</para>
+          </listitem>
+          <listitem>
+            <para>Let us know how you will use the data. The data set creators and Niwot LTER would appreciate hearing of any plans to use the data set. Consider consultation or collaboration with data set creators.</para>
+          </listitem>
+          <listitem>
+            <para>Although efforts have been made to ensure that these data are of the highest quality, the possibility of errors exists. Please notify the data manager of any errors at lternwt@colorado.edu.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="download">http://niwot.colorado.edu/data_csvs/saddsnow.dw.data.csv</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Study area was the Niwot Ridge saddle grid.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-105.643</westBoundingCoordinate>
+          <eastBoundingCoordinate>-105.3753</eastBoundingCoordinate>
+          <northBoundingCoordinate>40.0615</northBoundingCoordinate>
+          <southBoundingCoordinate>39.9932</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1992-10-30</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2016-12-31</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>
+        <para>The documentation for this file was created by Susan Kindig in May of 1993, with additional information being supplied by Rick Ingersoll and Brad Lewis. Data for 30 October 1992 to 29 May 1993 were added to the data section and the file was placed under sccs control during early June 1993.[RCI 4 June 1993] All data beginning 30 October 1992 were double- entered using EasyEntry programs (see "The Management of NWT LTER Data on the PC") and then processed on a Sun SPARC 2 (see "The Management of NWT LTER Data on culter").[RCI 14 June 1993] Data for 22 June 1993 were appended to the data section on 29 June 1993.[RCI 29 June 1993] Data for 1 and 19 July were appended to the data section on 23 July 1993.[RCI 23 July 1993] Data for 2 November 1993 were appended on 4 November 1993.[RCI 4 November 1993] Data for 20 November 1993 were appended on 23 November 1993.[RCI 23 November 1993] Data for 11 December 1993 were appended on 14 December 1993.[RCI 14 December 1993] Data for 30 December 1993 were appended to the data section on 7 January 1994. [RCI 7 January 1994] Data for 15 January 1994 were appended to the data section on 28 January 1994.[RCI 28 January 1994] Data for 4 February 1994 were appended to the data section on 8 February 1994. [RCI 8 February 1994] Data for 26 February and 17 March 1994 were appended to the data section on 5 April 1994.[RCI 5 April 1994] Data for 18 April 1994 were appended to the data section on 29 April 1994. [RCI 29 April 1994] Data for 9 April 1994 were inserted into the data section on 18 May 1994.[RCI 18 May 1994] Data for 2 June 1994 were appended to the data section on 7 June 1994.[RCI 7 June 1994] On 29 June 1994, Brad Lewis determined that the snow depth values recorded for grid stakes 48, 58, and 68 were erroneous for both 26 February and 17 March 1994. The snow depth values for those stakes for those days were changed to missing value indicators (999) in this file only (not in any EasyEntry or other processed data files) on 29 June 1994.[RCI 29 June 1994] Data for 14 May 1994 were inserted into the data section on 1 September 1994.[RCI 1 September 1994] Data for 9 January 1995 were appended to the data section on 20 January 1995.[RCI 20 January 1995] Missing value indicators for snow depth were changed from "999" to absence of value in order to conserve space on 20 January 1995.[RCI 20 January 1995] Data for 19 May 1995 were appended to the data section on 23 May 1995.[RCI 23 May 1995] Data for 1 June 1995 were appended to the data section on 6 June 1995.[RCI 6 June 1995] Data for 5 June 1995 were appended to the data section on 7 June 1995.[RCI 7 June 1995] Data for 12 June 1995 were appended to the data section on 15 June 1995.[RCI 15 June 1995] Data for 19 and 26 June 1995 were appended to the data section on 7 July 1995.[RCI 7 July 1995] Data for 7 and 13 July 1995 were appended to the data section on 19 July 1995.[RCI 19 July 1995] Data for 24 July 1995 and 2 August 1995 were appended to the data section on 8 August 1995.[MAH 8 August 1995] Data for 11 January 1996 were appended to the data section on 23 January 1996.[MAH 23 January 1996] Data for 28 February 1996 were appended to the data section on 13 March 1996.[MAH 13 March 1996] Data for 13 March 1996 were appended to the data section on 20 March 1996.[MAH 20 March 1996] Data for 27 March 1996 were appended to the data section on 9 April 1996.[MAH 9 April 1996] Data for 9 and 22 May 1996 were appended to the data section on 29 May 1996.[MAH 29 May 1996] Data for 7 and 14 June 1996 were appended to the data section on 2 July 1996.[MAH 2 July 1996] Data for 3 and 10 July 1996 were appended to the data section on 22 July 1996.[MAH 22 July 1996] Data for 26 June 1996 were inserted into the data section, and data for 16, 24, and 30 July 1996 and 6 August 1996 were appended to the data section on 18 October 1996.[MAH 18 October 1996] Data for 21 November 1996 were appended to the data section on 16 December 1996.[MAH 16 December 1996] Data for 28 January 1996 and 28 January 1997 were inserted and appended, respectively, to the data section on 13 February 1997.[MAH 13 February] Data for 13 February 1997 were appended to the data section on 24 February 1997.[MAH 24 February 1997] Data for 7 March 1997 were appended to the data section on 26 March 1997.[MAH 26 March 1997] Data for 15 May 1997 were appended to the data section on 26 June 1997.[MAH 26 June 1997] Data for 21 March, 9, 19, and 26 June, 10 July, 1 August, 28 November, and 18 December 1997, and 9 January 1998 were inserted in the data section on 17 February 1998.[MAH 17 February 1998] Data for 24 March 1998 were appended to the data section on 7 April 1998.[MAH 7 April 1998] Data for 18 and 27 May 1998 were appended to the data section on 17 June 1998.[MAH 17 June 1998] Data for 26 June 1998 were appended to the data section on 6 October 1998.[MAH 6 October 1998] On 25 February 1999, it was determined that the 09 June 1997 survey had been measured in decimeters. Data for that day were converted to centimeters and replaced at that time. Data for 14 July 1998, 1 and 17 December 1998, and 22 January 1999 were appended to the data section at that time as well, and notes from the hard copy data sheet for the 21 March 1997 survey were added to the comments section.[MAH 25 February 1999] Data for 26 February 1999 were appended to the data section on 25 March 1999.[MAH 25 March 1999] Data for 19 April, 29 April, 12 May, 01 June, 24 June, 30 June, 12 July, and 2 Decemember 1999 as well as 25 January, 24 February, 13 April, 03 May, 12 May, 30 May, and 09 June 2000 were appended to the data section on 19 July 200.[MAH 19 July 2000] Data for 29 March 1999 were inserted into the data section on 21 September 2000. The URL for earlier measurements was updated at that time as well.[MAH 21 September 2000] Data for 10 July 2000 were appended to the data section on 01 February 2001.[TMA 01 February 2001] Data for 07 January 2000 inserted into data section on 05 February 2001.[TMA 05 February 2001] Data for 8 January 2001 to 21 June 2001 on 30 July 2001.[TMA 30 July 2001] Data for 19 December 2001 were appended to the data section on 12 December 2002.[TMA 12 December 2002] Data for the period 02 January through 02 February 2002 were appended to the data section on 25 March 2002.[TMA 25 March 2002] Data for 15 March through 11 June 2002 were appended to the data section on 25 September 2002.[TMA 25 September 2002] Data for the period 20 November 2002 through 04 February 2003 were appended to the data section on 25 March 2003.[TMA 25 March 2003] Data for 27 February and 13 March 2003 were appended to the data section.[TMA 21 April 2003] Data for 8 April 2003 through 13 January 2004 were appended to the data section.[TMA 6 February 2004] Data for 03 February 2004 through 07 June 2004 were appended to the data section.[TMA 19 January 2005] Data for 22 June 2004 through 12 April 2005 were appended to the data section.[TMA 20 May 2005] Data for 17 May 2005 through 12 April 2007 were appended to the data section.[TMA 22 May 2007] Data for 20 April through 25 October 2007 were appended to the data section.[TMA 05 June 2008] Inserted 09 May 2007 and appended January through December 2008.[TMA 05 March 2009] Appended January through December 2009.[HCH 02 March 2010] Appended January through April 2010.[HCH 17 May 2010] Appended May through 15 June 2010.[HCH 2 July 2010] Appended 22 June 2010 through December 2011.[HCH 5 February 2012] Appended 03 January 2012 through 05 June 2012.[HCH 15 July 2012] Appended 06 November 2012; edited title, keywords, comments, columns, and data format. [HCH 05 July 2013] Appended data for 04 January through 19 December 2013. Column labels were shortened.[HCH 23 November 2014] Appended data for 2014. [HCH 14 June 2015] Columns were added for LTER site and local site. Data for 2015 were appended.[HCH 19 January 2017] Data for 2016 were appended.[HCH 29 September 2017] </para>
+      </description>
+    </maintenance>
+    <contact>
+      <positionName>Information Manager, Niwot Ridge LTER</positionName>
+      <address>
+        <deliveryPoint>4001 Discovery Drive, UCB 450</deliveryPoint>
+        <deliveryPoint>University of Colorado</deliveryPoint>
+        <city>Boulder</city>
+        <administrativeArea>Colorado</administrativeArea>
+        <postalCode>80303</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>lternwt@colorado.edu</electronicMailAddress>
+    </contact>
+    <publisher>
+      <organizationName>Niwot Ridge Long Term Ecological Research Project</organizationName>
+    </publisher>
+    <methods>
+      <methodStep>
+        <description>
+          <para>The Saddle grid snow survey was initiated in 1982 by Jim Halfpenny; Skip Walker assumed responsibility for the continuation of this survey in the autumn of 1992. Prior to that time, depths were measured at a location (in the vicinity of a grid stake in an area characterized by a great deal of snow depth variability) deemed to be representative of a "mean" snow depth for that particular grid stake. These earlier data can be found in 
+http://niwot.colorado.edu/data_csvs/saddsnow.jh.meta.txt</para>
+          <para>From 30 October 1992 until 31 January 1993, 1 to 5 measurements were made in the vicinity of stakes in areas characterized by a great deal of snow depth variability, means of such measurements were calculated, and it was those means that were manually entered into the computer. The EasyEntry program for manual entry of the snow survey data, as well as the Unix programs for post-EasyEntry processing, were modified for all data collected after 1 February 1993 in order to allow for entry of 5 separate snow-depth measurements associated with each of the grid stakes, i.e. at the grid stake as well as 1 to 2 m in each of the four cardinal directions from the grid stake. The files produced by these programs contain the means in addition to the "raw" measure- ments used to derive those means. For the sake of consistency, columns containing missing value indicators were inserted in the appropriate positions of the pre-February 1993 data prior to their incorporation in this file. It should be noted, however, that a single measurement at a particular stake prior to February 1993 may, in fact, be either the result of "mental" averaging in the field or be a true calculated mean of more than a single measurement. Also note that data prior to autumn 1992 were not available for the initial iteration of this file. The initial column in the data section contains a sort number used to faciliate data processing prior to incorporation into ARC/INFO format. The hard copy data sheet for the 21 March 1997 survey contained the note "?200" for grid stake 65, and "&gt;370" for grid stake 55. Both were entered as missing values.</para>
+        </description>
+      </methodStep>
+    </methods>
+    <dataTable id="saddsnow.dw.data.csv">
+      <entityName>Snow depth data for saddle grid</entityName>
+      <entityDescription>Snow depth data for Saddle grid, 1992 - ongoing</entityDescription>
+      <physical>
+        <objectName>saddsnow.dw.data.csv</objectName>
+        <authentication method="MD5">bba613b378afeef0d17ce8cb055714f6</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/31/14/6354b6f6c6d4ef8d6334cb3302644164</url>
+          </online>
+          <access
+            authSystem="https://pasta.edirepository.org/authentication"
+            order="allowFirst" system="https://pasta.edirepository.org">
+            <allow>
+              <principal>public</principal>
+              <permission>read</permission>
+            </allow>
+            <deny>
+              <principal>public</principal>
+              <permission>write</permission>
+            </deny>
+            <allow>
+              <principal>uid=hhumphries,o=LTER,dc=ecoinformatics,dc=org</principal>
+              <permission>read</permission>
+              <permission>write</permission>
+            </allow>
+          </access>
+        </distribution>
+      </physical>
+      <coverage>
+        <temporalCoverage>
+          <rangeOfDates>
+            <beginDate>
+              <calendarDate>1992</calendarDate>
+            </beginDate>
+            <endDate>
+              <calendarDate>2016</calendarDate>
+            </endDate>
+          </rangeOfDates>
+        </temporalCoverage>
+      </coverage>
+      <attributeList>
+        <attribute>
+          <attributeName>LTER_site</attributeName>
+          <attributeDefinition>LTER site name</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>NWT</code>
+                    <definition>Niwot Ridge</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>local_site</attributeName>
+          <attributeDefinition>local site name</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>sdl</code>
+                    <definition>saddle site</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>sort_num</attributeName>
+          <attributeDefinition>sort number</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">001</minimum>
+                  <maximum exclusive="false">801</maximum>
+                </bounds>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Not a Number</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>point_ID</attributeName>
+          <attributeDefinition>point identification number</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">001</minimum>
+                  <maximum exclusive="false">801</maximum>
+                </bounds>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Not a Number</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>date</attributeName>
+          <attributeDefinition>date (yyyy-mm-dd)</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Not a Number</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>depth_stake</attributeName>
+          <attributeDefinition>snow depth at grid stake</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Not a Number</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>depth_n</attributeName>
+          <attributeDefinition>snow depth 1 to 2 m north of grid stake</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Not a Number</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>depth_e</attributeName>
+          <attributeDefinition>snow depth 1 to 2 m east of grid stake</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Not a Number</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>depth_s</attributeName>
+          <attributeDefinition>snow depth 1 to 2 m south of grid stake</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Not a Number</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>depth_w</attributeName>
+          <attributeDefinition>snow depth 1 to 2 m west of grid stake</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Not a Number</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>mean_depth</attributeName>
+          <attributeDefinition>mean depth associated with grid stake</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>centimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Not a Number</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>num_meas</attributeName>
+          <attributeDefinition>number of measurements on which mean snow depth is based</attributeDefinition>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>whole</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">5</maximum>
+                </bounds>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>Not a Number</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <caseSensitive>no</caseSensitive>
+      <numberOfRecords>30800</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <stmml:unitList>
+        <stmml:unit id="dimensionless" name="dimensionless" unitType="dimensionless">
+          <stmml:description>a designation asserting the absence of an associated unit
+				</stmml:description>
+        </stmml:unit>
+        <stmml:unit id="number" name="number" unitType="dimensionless">
+          <stmml:description>dimensionless number, i.e., count</stmml:description>
+        </stmml:unit>
+      </stmml:unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

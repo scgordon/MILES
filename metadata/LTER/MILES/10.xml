@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-pal.98.2" scope="system"
+  system="https://pasta.lternet.edu"
+  xmlns:ds="eml://ecoinformatics.org/dataset-2.1.1"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://nis.lternet.edu/schemas/EML/eml-2.1.1/eml.xsd">
+  <access authSystem="https://pasta.lternet.edu/authentication"
+    order="allowFirst" scope="document" system="https://pasta.lternet.edu">
+    <allow>
+      <principal>uid=PAL,o=lter,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset scope="document">
+    <alternateIdentifier>98</alternateIdentifier>
+    <title>Adelie Penguin diet - number and weight of minor and major prey categories</title>
+    <creator>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <address>
+        <deliveryPoint>Palmer Station Antarctica LTER Office</deliveryPoint>
+        <deliveryPoint>208 Geoscience</deliveryPoint>
+        <deliveryPoint>61 Route 9W - PO Box 1000</deliveryPoint>
+        <city>Palisades</city>
+        <administrativeArea>New York</administrativeArea>
+        <postalCode>10964-8000</postalCode>
+        <country>USA</country>
+      </address>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>William</givenName>
+        <surName>Fraser</surName>
+      </individualName>
+      <organizationName>Polar Oceans Research</organizationName>
+      <electronicMailAddress>bfraser@3rivers.net</electronicMailAddress>
+    </creator>
+    <metadataProvider>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <address>
+        <deliveryPoint>Palmer Station Antarctica LTER Office</deliveryPoint>
+        <deliveryPoint>208 Geoscience</deliveryPoint>
+        <deliveryPoint>61 Route 9W - PO Box 1000</deliveryPoint>
+        <city>Palisades</city>
+        <administrativeArea>New York</administrativeArea>
+        <postalCode>10964-8000</postalCode>
+        <country>USA</country>
+      </address>
+    </metadataProvider>
+    <pubDate>2016</pubDate>
+    <abstract/>
+    <keywordSet>
+      <keyword>habitats</keyword>
+      <keyword>marine</keyword>
+      <keyword>taxonomy</keyword>
+      <keyword>birds</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>The data available here are intended for scholarly use by the research community,
+    with the express understanding that data users will properly acknowledge the originating investigator. Use or
+    reproduction of any material herein for any commercial purpose is prohibited without prior written permission
+    from the responsible party.</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">http://oceaninformatics.ucsd.edu/datazoo/data/pallter/datasets?action=summary&amp;id=98</url>
+      </online>
+    </distribution>
+    <contact>
+      <positionName>Information Manager</positionName>
+      <organizationName>LTER Network Office</organizationName>
+      <address>
+        <deliveryPoint>UNM Biology Department, MSC03-2020</deliveryPoint>
+        <deliveryPoint>1 University of New Mexico</deliveryPoint>
+        <city>Albuquerque</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>87131-0001</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">505 277-2535</phone>
+      <phone phonetype="fax">505 277-2541</phone>
+      <electronicMailAddress>tech-support@lternet.edu</electronicMailAddress>
+      <onlineUrl>http://www.lternet.edu</onlineUrl>
+    </contact>
+    <contact>
+      <positionName>PAL LTER Information Manager</positionName>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <electronicMailAddress>pallter-im@ucsd.edu</electronicMailAddress>
+    </contact>
+    <publisher>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <address>
+        <deliveryPoint>Palmer Station Antarctica LTER Office</deliveryPoint>
+        <deliveryPoint>208 Geoscience</deliveryPoint>
+        <deliveryPoint>61 Route 9W - PO Box 1000</deliveryPoint>
+        <city>Palisades</city>
+        <administrativeArea>New York</administrativeArea>
+        <postalCode>10964-8000</postalCode>
+        <country>USA</country>
+      </address>
+    </publisher>
+    <dataTable id="dat_98">
+      <entityName>AdeliePenguinDietPreyotherthanFishandEuphausiasuberba</entityName>
+      <entityDescription>Main data table for dataset</entityDescription>
+      <physical>
+        <objectName>98.2.csv</objectName>
+        <characterEncoding>ASCII</characterEncoding>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+              <literalCharacter>\</literalCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-pal/98/2/d9d8909259862d205753181a2716fddc</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="dat_98.studyName">
+          <attributeName>studyName</attributeName>
+          <attributeDefinition>Sampling expedition from which data were collected, generated, etc.</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sampling expedition from which data were collected, generated, etc.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="dat_98.col_1445">
+          <attributeName>Datetime GMT</attributeName>
+          <attributeDefinition>date and time </attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_98.col_1446">
+          <attributeName>Sample Number</attributeName>
+          <attributeDefinition>record number of a sampling event</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_98.col_1447">
+          <attributeName>Source</attributeName>
+          <attributeDefinition>code representing the segment of an organism's digestive process from which a prey sample is retrived</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>STOM</code>
+                    <definition>prey found in stomach</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GIZZ</code>
+                    <definition>prey found in gizzard</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_98.col_1448">
+          <attributeName>Prey Type</attributeName>
+          <attributeDefinition>code representing the type of prey retrieved from an organism's digestive system</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>AMPH</code>
+                    <definition>amphipod</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CRUS</code>
+                    <definition>crustacean</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GAST</code>
+                    <definition>gastropod</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>INVE</code>
+                    <definition>invertebrate</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>KRIL</code>
+                    <definition>krill</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SHRM</code>
+                    <definition>shrimp</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SNAL</code>
+                    <definition>snail</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SQUD</code>
+                    <definition>squid</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNKN</code>
+                    <definition>unknown</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_98.col_1449">
+          <attributeName>Species</attributeName>
+          <attributeDefinition>a string representing the species of an organism</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>a string representing the species of an organism</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_98.col_1450">
+          <attributeName>Evidence</attributeName>
+          <attributeDefinition>a code representing the type of prey evidence retrieved from an organism's digestive system</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Y</code>
+                    <definition>Yes, there is evidence of prey other than krill or fish</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>N</code>
+                    <definition>No, there is no evidence of prey other than krill or fish</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_98.col_1451">
+          <attributeName>Prey Number</attributeName>
+          <attributeDefinition>number of prey or prey evidence retrieved from an organism's digestive system</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_98.col_1452">
+          <attributeName>Evidence Size</attributeName>
+          <attributeDefinition>length of prey retrieved from an organism's digestive system</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">decimal</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>millimeter</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_98.col_1453">
+          <attributeName>Evidence Weight</attributeName>
+          <attributeDefinition>weight of prey retrieved from an organism's digestive system</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">decimal</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>gram</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_98.col_1454">
+          <attributeName>Estimated Prey Length</attributeName>
+          <attributeDefinition>length of an organism</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>millimeter</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_98.col_1455">
+          <attributeName>Estimated Prey Weight</attributeName>
+          <attributeDefinition>weight of an organism</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>gram</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <stmml:unitList xmlns="http://www.xml-cml.org/schema/stmml"
+        xmlns:sch="http://www.ascc.net/xml/schematron"
+        xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xml-cml.org/schema/stmml-1.1 stmml.xsd">
+        <stmml:unitType id="dimensionless" name="dimensionless">
+          <stmml:dimension name="dimensionless"/>
+        </stmml:unitType>
+        <stmml:unitType id="length" name="length">
+          <stmml:dimension name="length"/>
+        </stmml:unitType>
+        <stmml:unitType id="mass" name="mass">
+          <stmml:dimension name="mass"/>
+        </stmml:unitType>
+        <stmml:unit abbreviation="m" id="meter" name="meter" unitType="length">
+          <stmml:description>SI unit of length</stmml:description>
+        </stmml:unit>
+        <stmml:unit abbreviation="kg" id="kilogram" name="kilogram" unitType="mass">
+          <stmml:description>SI unit of mass</stmml:description>
+        </stmml:unit>
+        <stmml:unit abbreviation="" id="number" name="number" unitType="dimensionless">
+          <stmml:description>a number</stmml:description>
+        </stmml:unit>
+        <stmml:unit abbreviation="mm" constantToSI="0" id="millimeter"
+          multiplierToSI="0.001" name="millimeter" parentSI="meter" unitType="length">
+          <stmml:description>.001 meters</stmml:description>
+        </stmml:unit>
+        <stmml:unit abbreviation="g" constantToSI="0" id="gram"
+          multiplierToSI="0.001" name="gram" parentSI="kilogram" unitType="mass">
+          <stmml:description>0.001 kg</stmml:description>
+        </stmml:unit>
+      </stmml:unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

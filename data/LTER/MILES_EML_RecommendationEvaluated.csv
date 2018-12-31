@@ -1,0 +1,307 @@
+Collection,Dialect,Record,Concept,XPath,Content
+MILES,EML,12.xml,Resource Title,/eml:eml/dataset/title,"Adelie penguin diet composition, fish species and numbers, 1991 - present."
+MILES,EML,12.xml,Abstract,/eml:eml/dataset/abstract,"The fundamental long-term objective of the seabird component of the Palmer LTER (PAL) has been to identify and understand the mechanistic processes that regulate the mean fitness (population growth rate) of regional penguin populations. Two hypotheses have guided this research, with one suggesting that population mean fitness is best explained by changes in regional krill biomass, and the other proposing that long-term changes in sea ice affects mean fitness by tipping the balance in favor of one species over another in accordance with species-specific evolved life history affinities to sea ice. Although these hypotheses are not mutually exclusive, current evidence in the PAL region tends to favor the latter over the former. Since the inception of PAL, AdÃ©lie penguin populations have effectively collapsed, while those of gentoo and chinstrap penguins have increased dramatically, trends that are spatially and temporally coherent with decreasing regional sea ice duration. AdÃ©lie penguins are an ice-obligate polar species whose life history is intimately linked to the presence of sea ice, while chinstrap and gentoo penguins are ice-intolerant species whose life histories evolved in the sub-Antarctic, where sea ice is a less permanent feature of the marine ecosystem. In contrast, although krill constitute the most important component of the summer diets by mass of these three penguin species, changes in PAL krill abundances have exhibited no long-term trends, and thus fail to explain the divergent patterns in penguin populations evident in our time series. Fish occur frequently in AdÃ©lie penguin diets but rarely as whole specimens, hence recording their presence in sorted subsamples (see DIET) is generally limited to noting the incidence of skin, flesh, bones, eyes and especially otoliths. With the exception of otoliths, the weights of these items are obtained if warranted by the sample size. Otoliths can be used to identify individual fish species, and in combination with regression equations based on otolith length and width, can also be used to reconstitute fish length and mass. However, because the expertise needed to identify fish from otoliths does not exist within the PAL program, otolith identification is performed by off-site experts as time and funding allow. This results in long lags between the time otoliths are collected and integrated with the appropriate databases, meaning that understanding the role of fish in AdÃ©lie penguin diets still remains a longer-term objective of PAL."
+MILES,EML,12.xml,Author / Originator,/eml:eml/dataset/creator,Palmer Station Antarctica LTER Palmer Station Antarctica LTER Office208 Geoscience61 Route 9W - PO Box 1000 Palisades New York 10964-8000 USA
+MILES,EML,12.xml,Author / Originator,/eml:eml/dataset/creator,William Fraser Polar Oceans Research bfraser@3rivers.net
+MILES,EML,12.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 0 \n column , ' \"
+MILES,EML,12.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,1991 2015
+MILES,EML,12.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,habitats
+MILES,EML,12.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,marine
+MILES,EML,12.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,taxonomy
+MILES,EML,12.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,birds
+MILES,EML,12.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,fishes
+MILES,EML,12.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Population Studies
+MILES,EML,15.xml,Resource Title,/eml:eml/dataset/title,"Snow depth data for saddle snowfence, 1992 - ongoing."
+MILES,EML,15.xml,Abstract,/eml:eml/dataset/abstract,"A snowfence was built in 1993 on the Niwot Ridge Saddle grid to determine the effects of changes in snowpack on a number of variables. The study area was 60m x 125m. Snow depths were measured at each of 147 points within the snowfence experiment area and at 6 control locations outside of but near the snowfence experiment area. Of the 147 points, 84 were located on the leeward (east) side of the snowfence, 56 were located on the windward (west) side of the snowfence, and 7 were located along the snowfence itself. These measurements were made weekly to biweekly. Sampling locations were each given a unique point indentification number in order that these data could be incorporated into the Saddle GIS. The snowfence was oriented in a north/south direction and was 60 m long. Each of the point identification numbers had a coordinate within the experiment area. The first number of the coordinate was the distance in m from the snowfence in an east/west direction, negative numbers being west of the snowfence and positive numbers being east of the fence. The second number in the coordinate was the distance in m from the southern terminus of the snowfence in a northerly direction. Point identification numbers and coordinates for the windward drift were: 200 (-40,0), 201 (-40,10), 202 (-40,20), 203 (-40,30), 204 (-40,40), 205 (-40,50), 206 (-40,60), 207 (-35,0), 208 (-35,10), 209 (-35,20), 210 (-35,30), 211 (-35,40), 212 (-35,50), 213 (-35,60), 214 (-30,0), 215 (-30,10), 216 (-30,20), 217 (-30,30), 218 (-30,40), 219 (-30,50), 220 (-30,60), 221 (-25,0), 222 (-25,10), 223 (-25,20), 224 (-25,30), 225 (-25,40), 226 (-25,50), 227 (-25,60), 228 (-20,0), 229 (-20,10), 230 (-20,20), 231 (-20,30), 232 (-20,40), 233 (-20,50), 234 (-20,60), 235 (-15,0), 236 (-15,10), 237 (-15,20), 238 (-15,30), 239 (-15,40), 240 (-15,50), 241 (-15,60), 242 (-10,0), 243 (-10,10), 244 (-10,20), 245 (-10,30), 246 (-10,40), 247 (-10,50), 248 (-10,60), 249 (-5,0), 250 (-5,10), 251 (-5,20), 252 (-5,30), 253 (-5,40), 254 (-5,50), 255 (-5,60). Point identification numbers and coordinates for the leeward drift were: 256 (5,0), 257 (5,10), 258 (5,20), 259 (5,30), 260 (5,40), 261 (5,50), 262 (5,60), 263 (10,0), 264 (10,10), 265 (10,20), 266 (10,30), 267 (10,40), 268 (10,50), 269 (10,60), 270 (15,0), 271 (15,10), 272 (15,20), 273 (15,30), 274 (15,40), 275 (15,50), 276 (15,60), 278 (20,0), 279 (20,10), 280 (20,20), 281 (20,30), 282 (20,40), 283 (20,50), 284 (20,60), 285 (25,0), 286 (25,10), 287 (25,20), 288 (25,30), 289 (25,40), 290 (25,50), 291 (25,60), 292 (30,0), 293 (30,10), 294 (30,20), 295 (30,30), 296 (30,40), 297 (30,50), 298 (30,60), 299 (35,60), 300 (35,10), 301 (35,20), 302 (35,30), 303 (35,40), 304 (35,50), 305 (35,0), 306 (40,0), 307 (40,10), 308 (40,20), 309 (40,30), 310 (40,40), 311 (40,50), 312 (40,60), 313 (45,0), 314 (45,10), 315 (45,20), 316 (45,30), 317 (45,40), 318 (45,50), 319 (45,60), 320 (50,0), 321 (50,10), 322 (50,20), 323 (50,30), 324 (50,40), 325 (50,50), 326 (50,60), 327 (55,0), 328 (55,10), 329 (55,20), 330 (55,30), 331 (55,40), 332 (55,50), 333 (55,60), 334 (60,0), 335 (60,10), 336 (60,20), 337 (60,30), 338 (60,40), 339 (60,50), 340 (60,60). Point identification numbers and coordinates for the points directly along the fence were: 341 (0,0), 342 (0,10), 343 (0,20), 344 (0,30), 345 (0,40), 346 (0,50), 346 (0,60). Point identification numbers and locations for the control points were: 113 (approximately 10 m south of the -30,0 coordinate) in the Acomastylidetum rossii vegetation association, 114 (approximately 11 m south of the -25,0 coordinate) in the Acomastylidetum rossii vegetation association, 115 (approximately 8 m south of the 55,0 coordinate) in the Kobresietum myosuroidis vegetation association, 116 (approximately 5 m north of the 50,60 coordinate) in the Kobresietum myosuroidis vegetation association, 117 (approximately 3 m north of the -23,60 coordinate) in the Rhodiolo integrifoliae vegetation association, 118 (approximately 5 m north of the -21,60 coordinate) in the Rhodiolo integrifoliae vegetation association. Control points are indicated by a 'C' in column 2. NOTE: This LTER data portal display does not contain important maintenance/log information. Please be sure to view the EML file (a text file that contains XML tags) which is included in the zip archive (click on 'Download zip archive') for legacy maintenance/log information pertaining to each dataset. The EML file name will have the following format: knb-lter-nwt.[3 digit dataset number].[version number].xml. Most web browsers can parse the EML so it's easier to read. Scroll down to the 'maintenance' tag."
+MILES,EML,15.xml,Author / Originator,/eml:eml/dataset/creator,Dr. Donald (Skip) Walker Institute of Arctic Biology University of Alaska Fairbanks 311 Irving PO Box 757000 Fairbanks Alaska 99775-6780 UNITED STATES (907)474-2460
+MILES,EML,15.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 0 \r column , '"
+MILES,EML,15.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,1992-10-30 2012-11-27
+MILES,EML,15.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"The southern terminus of the 60-m fence is to be 25 m west of Saddle grid stake #28 and 25 m east of Saddle grid stake #27; the snowfence study area thus included or touched Saddle grid stakes #27, 28, 29, 37, 38, and 39. Original data are stored in Research Laboratory #3. -105.643 -105.3753 40.0615 39.9932"
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow depth
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow pack
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow accumulation
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,windward drift
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,leeward drift
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,control plot
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,altered snow regime
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snowfence
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,saddle grid
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,climatology
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,meteorology
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,hydrology
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow effects
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,disturbance
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Niwot Ridge LTER
+MILES,EML,15.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,NWT
+MILES,EML,5.xml,Resource Title,/eml:eml/dataset/title,"Parker River daily discharge, at Byfield, MA"
+MILES,EML,5.xml,Abstract,/eml:eml/dataset/abstract,"USGS gaged daily discharge from the Parker River at Byfield, Massachusetts (Station 01101000), draining 55.1637 km2 of watershed. Data is used for determining freshwater flows into the Plum Island Sound Estuary, MA."
+MILES,EML,5.xml,Author / Originator,/eml:eml/dataset/creator,"Plum Island Ecosystems LTER Program Wil Wollheim Institute for the Study of Earth, Oceans, and Space University of New Hampshire 8 College Rd. Durham NH 03824 USA"
+MILES,EML,5.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column ,"
+MILES,EML,5.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,1945-10-26 2013-10-22
+MILES,EML,5.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"Parker River at Byfield, Massachusetts; on left bank 1,400 ft downstream from dam, 0.5 mi south of Byfield, 0.7 mi upstream from Wheeler Brook, and 5.5 mi southwest of Newburyport. -70.946111 -70.946111 42.752778 42.752778"
+MILES,EML,5.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,PIE LTER
+MILES,EML,5.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Plum Island Ecosystems
+MILES,EML,5.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Massachusetts
+MILES,EML,5.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Parker River
+MILES,EML,5.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,disturbance
+MILES,EML,5.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,discharge
+MILES,EML,5.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,stream
+MILES,EML,5.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,flow
+MILES,EML,5.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,river
+MILES,EML,2.xml,Resource Title,/eml:eml/dataset/title,"Marsh water table height, logging data from the Railroad site on the Parker River for September-December 2002"
+MILES,EML,2.xml,Abstract,/eml:eml/dataset/abstract,"Measurements of water table height in the Parker River marsh located downstream of the railroad bridge. Measurements were taken every 4 minutes at each logger along a transect of water level loggers running perpendicular to the Parker River bank at the railroad site, MAR-PR-Wtable-RR, for September-December 2002."
+MILES,EML,2.xml,Author / Originator,/eml:eml/dataset/creator,Plum Island Ecosystems LTER Program Charles Hopkinson Ecosystems Center MBL 7 MBL St Woods Hole MA 02543 USA
+MILES,EML,2.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column ,"
+MILES,EML,2.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,2002-09-01 2002-12-09
+MILES,EML,2.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"Lower Parker river, down-stream of railroad bridge, Spartina-dominated marsh edge, river kilometer is PR-12.75 -70.858759 -70.858759 42.761477 42.761477"
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,PIE LTER
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Plum Island Ecosystems
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Massachusetts
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Parker River
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,disturbance
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,estuary
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Spartina
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,water table
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,porewater
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,marsh
+MILES,EML,2.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,elevation
+MILES,EML,14.xml,Resource Title,/eml:eml/dataset/title,"Snow cover profile raw data for Niwot Ridge and Green Lakes Valley, 1993 - ongoing."
+MILES,EML,14.xml,Abstract,/eml:eml/dataset/abstract,Snow pits were excavated at various locations on Niwot Ridge and within the Green Lakes Valley. Temperature and snow density were measured at various depths throughout the snow cover profiles in order to characterize the temperature and snow water equivalent (SWE) of the snowpack throughout the year. Snow density was measured at 10-cm intervals using a 1000-ml cutter. Data on snow grain qualities were collected beginning in the 1994-95 snow season. NOTE: This LTER data portal display does not contain important maintenance/log information. Please be sure to view the EML file (a text file that contains XML tags) which is included in the zip archive (click on 'Download zip archive') for legacy maintenance/log information pertaining to each dataset. The EML file name will have the following format: knb-lter-nwt.[3 digit dataset number].[version number].xml. Most web browsers can parse the EML so it's easier to read. Scroll down to the 'maintenance' tag.
+MILES,EML,14.xml,Author / Originator,/eml:eml/dataset/creator,"Mark Williams INSTAAR, University of Colorado 1560 30th Street UCB 450 Boulder CO 80309-0450 (303) 492-8830 mark.williams@colorado.edu"
+MILES,EML,14.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 0 \r column , '"
+MILES,EML,14.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,1993-02-26 2012-12-29
+MILES,EML,14.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,Study sites were various locations on Niwot Ridge and within the Green Lakes Valley. Original data are stored at Research Laboratory #3. -105.643 -105.3753 40.0615 39.9932
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow weight
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow temperature
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow depth
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow pit
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,saddle grid
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow profile
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,hydrology
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Green Lake 4
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Green Lake 5
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Green Lakes Valley
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Soddie
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Navajo bench
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Martinelli
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,tvan
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,subnivean
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Albion
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Ameriflux
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Niwot Ridge LTER
+MILES,EML,14.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,NWT
+MILES,EML,13.xml,Resource Title,/eml:eml/dataset/title,"Adelie penguin breeding population arrival chronology on Humble Island, 1991 - present."
+MILES,EML,13.xml,Abstract,/eml:eml/dataset/abstract,"The fundamental long-term objective of the seabird component of the Palmer LTER (PAL) has been to identify and understand the mechanistic processes that regulate the mean fitness (population growth rate) of regional penguin populations. Two hypotheses have guided this research, with one suggesting that population mean fitness is best explained by changes in regional krill biomass, and the other proposing that long-term changes in sea ice affects mean fitness by tipping the balance in favor of one species over another in accordance with species-specific evolved life history affinities to sea ice. Although these hypotheses are not mutually exclusive, current evidence in the PAL region tends to favor the latter over the former. Since the inception of PAL, AdÃ©lie penguin populations have effectively collapsed, while those of gentoo and chinstrap penguins have increased dramatically, trends that are spatially and temporally coherent with decreasing regional sea ice duration. AdÃ©lie penguins are an ice-obligate polar species whose life history is intimately linked to the presence of sea ice, while chinstrap and gentoo penguins are ice-intolerant species whose life histories evolved in the sub-Antarctic, where sea ice is a less permanent feature of the marine ecosystem. In contrast, although krill constitute the most important component of the summer diets by mass of these three penguin species, changes in PAL krill abundances have exhibited no long-term trends, and thus fail to explain the divergent patterns in penguin populations evident in our time series. The arrival chronology of adult AdÃ©lie penguins on Humble Island is documented annually through island-wide censuses performed as ice and weather conditions permit. Recorded data (numbers of adults present) provide a measure of the number of adults arriving daily at the breeding colonies, a metric that is sensitive to environmental conditions such as sea ice extent during late winter and early spring. These data are also used in combination with other metrics to determine the optimal window for other, more extensive area-wide breeding population censuses (see CENSUS)."
+MILES,EML,13.xml,Author / Originator,/eml:eml/dataset/creator,Palmer Station Antarctica LTER Palmer Station Antarctica LTER Office208 Geoscience61 Route 9W - PO Box 1000 Palisades New York 10964-8000 USA
+MILES,EML,13.xml,Author / Originator,/eml:eml/dataset/creator,William Fraser Polar Oceans Research bfraser@3rivers.net
+MILES,EML,13.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 0 \n column , ' \"
+MILES,EML,13.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,1991 2015
+MILES,EML,13.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,taxonomy
+MILES,EML,13.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,populations
+MILES,EML,13.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,birds
+MILES,EML,13.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,population and community properties
+MILES,EML,13.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,population dynamics
+MILES,EML,13.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Population Studies
+MILES,EML,3.xml,Resource Title,/eml:eml/dataset/title,"Year 2002, 15 minute measurements of stage, water temperature, conductivity, dissolved oxygen, and pH in a small headwater stream draining a moderate sized, mixed land use (mainly forest) watershed, Fish Brook, Middleton, MA."
+MILES,EML,3.xml,Abstract,/eml:eml/dataset/abstract,"During 2002, continuous measurements, every 15 minutes, were made of stage, water temperature, conductivity, dissolved oxygen, and pH in a small headwater stream, Fish Brook, Boxford, MA, draining a moderate sized, mixed land use watershed. Measurements are for part of the ice free season (June – December). Discharge could not be determined due to inadequate rating curve and due to beaver activity. Several day gaps occur periodically due to removal for recalibration."
+MILES,EML,3.xml,Author / Originator,/eml:eml/dataset/creator,Plum Island Ecosystems LTER Program Wilfred Wollheim Morse Hall UNH Durham NH 03824 USA
+MILES,EML,3.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column ,"
+MILES,EML,3.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,2002-03-22 2002-12-03
+MILES,EML,3.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"Watershed water collection and stream characterization site for Fish Brook, Boxford, MA -71.004821 -71.004821 42.65831 42.65831"
+MILES,EML,3.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,PIE LTER
+MILES,EML,3.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,disturbance
+MILES,EML,3.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Fish Brook
+MILES,EML,3.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,forest
+MILES,EML,3.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,water temperature
+MILES,EML,3.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,water stage
+MILES,EML,3.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,conductivity
+MILES,EML,3.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,pH
+MILES,EML,3.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,dissolved oxygen
+MILES,EML,4.xml,Resource Title,/eml:eml/dataset/title,"Year 2002, measurements of water column depth at 15 minute intervals in the upper Parker River at Middle Road (Thurlow's Bridge), Byfield, MA."
+MILES,EML,4.xml,Abstract,/eml:eml/dataset/abstract,"Year 2002, 15 minute readings of water column depth in the upper Parker River at Middle Road (Thurlow's Bridge), Byfield, MA. Middle Road is located 18.5 km up the estuary from the 0 km reference at the mouth of Plum Island Sound. Water depths are relative to the sonde pressure transducer and are not associated with a datum."
+MILES,EML,4.xml,Author / Originator,/eml:eml/dataset/creator,Plum Island Ecosystems LTER Program Joe Vallino Ecosystems Center MBL 7 MBL St Woods Hole MA 02543 USA
+MILES,EML,4.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column ,"
+MILES,EML,4.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,2002-04-11 2002-12-04
+MILES,EML,4.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"YSI water quality sonde at Middle Rd (Thurlow's Bridge) on Parker River, Byfield, MA -70.900941 -70.900941 42.758904 42.758904"
+MILES,EML,4.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,PIE LTER
+MILES,EML,4.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,disturbance
+MILES,EML,4.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Plum Island Ecosystems
+MILES,EML,4.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Massachusetts
+MILES,EML,4.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,sea level
+MILES,EML,4.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,tide
+MILES,EML,4.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,water level
+MILES,EML,4.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,depth
+MILES,EML,4.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Parker River
+MILES,EML,4.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,monitoring
+MILES,EML,7.xml,Resource Title,/eml:eml/dataset/title,"Year 2001, meteorological data, 15 minute intervals, from weather station located at the Governor's Academy located in Byfield, MA."
+MILES,EML,7.xml,Abstract,/eml:eml/dataset/abstract,"Year 2001 meteorological measurements at Governor's Academy of air temperature, humidity, precipitation, solar radiation, photosynthetically active radiation (PAR), wind speed and direction and barometric pressure. Sensors conduct measurements every 5 secs and measurements are reported as averages or totals for 15 minute intervals. 15 minute averages are reported for air temperature, humidity, solar radiation, PAR, wind speed and direction and barometric pressure. 15 minute totals are reported for precipitation."
+MILES,EML,7.xml,Author / Originator,/eml:eml/dataset/creator,Plum Island Ecosystems LTER Program Chuck Hopkinson Georgia Sea Grant University of Georgia 229 Marine Sciences Athens GA 30602 USA
+MILES,EML,7.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column ,"
+MILES,EML,7.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,2001-01-01 2001-12-31
+MILES,EML,7.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"PIE meteorological station at Governor's Academy, Byfield, MA -70.902407 -70.902407 42.751484 42.751484"
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,PIE LTER
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Massachusetts
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Byfield
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,primary production
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,climate
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,meteorology
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,temperature
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,precipitation
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,rain
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,humidity
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,solar
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,radiation
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,PAR
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,wind
+MILES,EML,7.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,pressure
+MILES,EML,9.xml,Resource Title,/eml:eml/dataset/title,"PIE LTER Eddy flux measurements during 2016 from second high marsh site (Spartina patens/short Spartina alterniflora) Tall Tower off Nelson Island Creek, Rowley, Massachusetts"
+MILES,EML,9.xml,Abstract,/eml:eml/dataset/abstract,"We deployed an eddy covariance system to measure ecosystem-atmosphere exchange of CO2Â  above a high marsh system (Spartina patens, short Spartina alterniflora) located on the Parker River Wildlife Refuge in marshes of Plum Island Sound, Rowley MA. The system is located near a higher elevation rock outcroppingprotected area which allows the tower set up to remain during the Winter as it is protected from ice flows. The data represents CO2 exchange for all 12 months of 2016."
+MILES,EML,9.xml,Author / Originator,/eml:eml/dataset/creator,"Anne Giblin Marine Biological Lab, 7 MBL Street Woods Hole MA 02543 US (508) 289-7488 (508) 457-1548 agiblin@mbl.edu http://orcid.org/0000-0003-3851-2178"
+MILES,EML,9.xml,Author / Originator,/eml:eml/dataset/creator,"Inke Forbrich Marine Biological Laboratory, 7 MBL Street Woods Hole MA 02543 US (508) 289-7741 (508) 457-1548 iforbrich@mbl.edu"
+MILES,EML,9.xml,Author / Originator,/eml:eml/dataset/creator,Plum Island Ecosystems LTER http://pie-lter.ecosystems.mbl.edu/
+MILES,EML,9.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column ,"
+MILES,EML,9.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,2016-01-01 2016-12-31
+MILES,EML,9.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"PIE Eddy Flux station, Tall tower on rock outcropping in marsh off Stackyard Rd, Nelson Island Creek, PRNWR, Rowley, MA -70.830223083496 -70.830223083496 42.742439270020 42.742439270020"
+MILES,EML,9.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Primary Production
+MILES,EML,9.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Organic Matter
+MILES,EML,9.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,high marsh
+MILES,EML,9.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,primary production
+MILES,EML,9.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,organic matter
+MILES,EML,9.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Massachusetts
+MILES,EML,9.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,carbon fluxes
+MILES,EML,9.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,net ecosystem exchange
+MILES,EML,9.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,PIE LTER
+MILES,EML,9.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Plum Island Ecosystems
+MILES,EML,19.xml,Resource Title,/eml:eml/dataset/title,"Air temperature data for C1 chart recorder, 1952 - ongoing"
+MILES,EML,19.xml,Abstract,/eml:eml/dataset/abstract,"This is a summary of major ion concentrations for stream water samples collected from the stream draining the Arikaree Cirque. Sampling location varied from the channel at the lip of the cirque, where it is first exposed by snowmelt, at the beginning of the season to the outlet from the pond at the foot of the glacier (usually around early July)."
+MILES,EML,19.xml,Author / Originator,/eml:eml/dataset/creator,"Mark Losleben Tree-Ring Lab, University of Arizona 1215 E. Lowell Street, Box 210045 Tucson Arizona 85721 UNITED STATES losleben@email.arizona.edu"
+MILES,EML,19.xml,Author / Originator,/eml:eml/dataset/creator,"Niwot Ridge LTER 4001 Discovery Drive, UCB 450 University of Colorado Boulder CO 80303 United States http://niwot.colorado.edu/"
+MILES,EML,19.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column , '"
+MILES,EML,19.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,1952-10-01 2016-12-31
+MILES,EML,19.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,Study site was C1 climate station (3018 m) -105.643 -105.3753 40.0615 39.9932
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,climate
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,weather
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,meteorology
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,climatology
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,air temperature
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,c1
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,infilling
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,chart recorder
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Niwot Ridge LTER
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,NWT
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,sensor data
+MILES,EML,19.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,long term
+MILES,EML,10.xml,Resource Title,/eml:eml/dataset/title,Adelie Penguin diet - number and weight of minor and major prey categories
+MILES,EML,10.xml,Abstract,/eml:eml/dataset/abstract,
+MILES,EML,10.xml,Author / Originator,/eml:eml/dataset/creator,Palmer Station Antarctica LTER Palmer Station Antarctica LTER Office 208 Geoscience 61 Route 9W - PO Box 1000 Palisades New York 10964-8000 USA
+MILES,EML,10.xml,Author / Originator,/eml:eml/dataset/creator,William Fraser Polar Oceans Research bfraser@3rivers.net
+MILES,EML,10.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 0 \n column , ' \"
+MILES,EML,10.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,habitats
+MILES,EML,10.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,marine
+MILES,EML,10.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,taxonomy
+MILES,EML,10.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,birds
+MILES,EML,17.xml,Resource Title,/eml:eml/dataset/title,"2012 Snow Survey for Green Lakes Valley, Niwot Ridge LTER, Colorado"
+MILES,EML,17.xml,Abstract,/eml:eml/dataset/abstract,"Yearly snow surveys were conducted in the Green Lakes Valley in the City of Boulder Watershed at the estimated peak of snowpack in late spring. Over a period of several days, surveying teams (1 to several people) traversed valley slopes measuring snow depth with avalanche probes. Locations of each depth measurement were recorded as waypoints in Garmin hand-held GPS units (eTrex Legend and eTrex Legend H models). Snow depths were recorded on standardized field sheets along with dates, recorder names, waypoint numbers, and comments. GPS locations were downloaded as text files from Garmin units using Topo! software, specifying NAD83 for surveys conducted after 2009. Download files contained waypoint number, latitude, longitude, date, and elevation. Each file was imported into a Microsoft Excel spreadsheet and snow depths corresponding to waypoints were entered manually from field sheets. Shapefiles were constructed in ArcInfo/ArcGIS from dbf files generated either directly from Excel spreadsheets (before 2008) or after importing into Microsoft Access and then exporting as dbfs. All shapefiles are provided in a UTM zone 13 projection and NAD83 horizontal datum. NOTE: This EML metadata file does not contain important geospatial data processing information. Before using any NWT LTER geospatial data read the arcgis metadata XML file in either ISO or FGDC compliant format, using ArcGIS software (ArcCatalog > description), or by viewing the .xml file provided with the geospatial dataset."
+MILES,EML,17.xml,Author / Originator,/eml:eml/dataset/creator,"Jennifer Morse Climate Technician University of Colorado, Institute of Arctic and Alpine Research (INSTAAR) University of Colorado - INSTAAR, UCB 450 Boulder CO 80309 USA"
+MILES,EML,17.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,2012
+MILES,EML,17.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"Green Lakes Valley, Niwot Ridge, Colorado -105.644365 -105.616711 40.058748 40.046031"
+MILES,EML,17.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,environment
+MILES,EML,17.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Niwot Ridge
+MILES,EML,17.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,green lakes valley
+MILES,EML,17.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow survey
+MILES,EML,17.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,NWT
+MILES,EML,17.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Colorado
+MILES,EML,17.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Boulder
+MILES,EML,17.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Niwot Ridge LTER
+MILES,EML,8.xml,Resource Title,/eml:eml/dataset/title,"PIE LTER eddy flux measurements during 2015 from second high marsh site (Spartina patens/short Spartina alterniflora) Tall Tower off Nelson Island Creek, Rowley, Massachusetts"
+MILES,EML,8.xml,Abstract,/eml:eml/dataset/abstract,"We deployed an eddy covariance system to measure ecosystem-atmosphere exchange of CO2Â  above a high marsh system (Spartina patens, short Spartina alterniflora) located on the Parker River Wildlife Refuge in marshes of Plum Island Sound, Rowley MA. The system is located near a higher elevation rock outcroppingprotected area which allows the tower set up to remain during the Winter as it is protected from ice flows. The data represents CO2 exchange for all 12 months of 2015."
+MILES,EML,8.xml,Author / Originator,/eml:eml/dataset/creator,"Anne Giblin Marine Biological Lab, 7 MBL Street Woods Hole MA 02543 US (508) 289-7488 (508) 457-1548 agiblin@mbl.edu http://orcid.org/0000-0003-3851-2178"
+MILES,EML,8.xml,Author / Originator,/eml:eml/dataset/creator,"Inke Forbrich Marine Biological Laboratory, 7 MBL Street Woods Hole MA 02543 US (508) 289-7741 (508) 457-1548 iforbrich@mbl.edu"
+MILES,EML,8.xml,Author / Originator,/eml:eml/dataset/creator,Plum Island Ecosystems LTER http://pie-lter.ecosystems.mbl.edu/
+MILES,EML,8.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column ,"
+MILES,EML,8.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,2015-01-01 2015-12-31
+MILES,EML,8.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"PIE Eddy Flux station, Tall tower on rock outcropping in marsh off Stackyard Rd, Nelson Island Creek, PRNWR, Rowley, MA -70.830223083496 -70.830223083496 42.742439270020 42.742439270020"
+MILES,EML,8.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Primary Production
+MILES,EML,8.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Organic Matter
+MILES,EML,8.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,high marsh
+MILES,EML,8.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,primary production
+MILES,EML,8.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,organic matter
+MILES,EML,8.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Massachusetts
+MILES,EML,8.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,carbon fluxes
+MILES,EML,8.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,net ecosystem exchange
+MILES,EML,8.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,PIE LTER
+MILES,EML,8.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Plum Island Ecosystems
+MILES,EML,1.xml,Resource Title,/eml:eml/dataset/title,"Year 2002, 15 minute measurements of stage, water temperature, conductivity, dissolved oxygen, and pH in a small headwater stream draining a highly suburban catchment (72% residential), Saw Mill Brook, Burlington, MA."
+MILES,EML,1.xml,Abstract,/eml:eml/dataset/abstract,"Year 2002, continuous measurements, every 15 minutes, were made of stage, water temperature, conductivity, and dissolved oxygen in a small headwater stream, Saw Mill Brook, Burlington, MA, draining a highly suburban catchment (72% residential). Measurements are for part of the ice free season (June – December). Discharge is determined from stage using discharge vs stage regressions. Several day gaps occur periodically due to removal for recalibration."
+MILES,EML,1.xml,Author / Originator,/eml:eml/dataset/creator,Plum Island Ecosystems LTER Program Wilfred Wollheim Morse Hall UNH Durham NH 03824 USA
+MILES,EML,1.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column ,"
+MILES,EML,1.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,2002-03-22 2002-12-03
+MILES,EML,1.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"Watershed water collection and stream characterization site for Saw Mill Brook (urban landuse), Burlington, MA -71.185 -71.185 42.5236 42.5236"
+MILES,EML,1.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,PIE LTER
+MILES,EML,1.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,disturbance
+MILES,EML,1.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Saw Mill Brook
+MILES,EML,1.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,suburban
+MILES,EML,1.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,discharge
+MILES,EML,1.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,water temperature
+MILES,EML,1.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,water stage
+MILES,EML,1.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,conductivity
+MILES,EML,1.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,pH
+MILES,EML,1.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,dissolved oxygen.
+MILES,EML,6.xml,Resource Title,/eml:eml/dataset/title,"Ipswich River daily discharge, Ipswich, MA"
+MILES,EML,6.xml,Abstract,/eml:eml/dataset/abstract,"USGS gaged daily discharge from the Ipswich River near Ipswich (01102000), draining 317.56 km2 of watershed. Data is used for determining freshwater flows into the Plum Island Sound Estuary, MA."
+MILES,EML,6.xml,Author / Originator,/eml:eml/dataset/creator,"Plum Island Ecosystems LTER Program Wil Wollheim Institute for the Study of Earth, Oceans, and Space University of New Hampshire 8 College Rd. Durham NH 03824 USA"
+MILES,EML,6.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column ,"
+MILES,EML,6.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,1930-06-17 2012-01-08
+MILES,EML,6.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"Ipswich River near Ipswich, MA; on left bank 200 ft downstream from Willowdale Dam, 1.5 mi downstream from Howlett Brook, and 4 mi upstream from Ipswich. -70.894167 -70.894167 42.659722 42.659722"
+MILES,EML,6.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,PIE LTER
+MILES,EML,6.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Plum Island Ecosystems
+MILES,EML,6.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Massachusetts
+MILES,EML,6.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Ipswich River
+MILES,EML,6.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,disturbance
+MILES,EML,6.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,discharge
+MILES,EML,6.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,stream
+MILES,EML,6.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,flow
+MILES,EML,6.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,river
+MILES,EML,16.xml,Resource Title,/eml:eml/dataset/title,"2011 Snow Survey for Green Lakes Valley, Niwot Ridge LTER, Colorado"
+MILES,EML,16.xml,Abstract,/eml:eml/dataset/abstract,"Yearly snow surveys were conducted in the Green Lakes Valley in the City of Boulder Watershed at the estimated peak of snowpack in late spring. Over a period of several days, surveying teams (1 to several people) traversed valley slopes measuring snow depth with avalanche probes. Locations of each depth measurement were recorded as waypoints in Garmin hand-held GPS units (eTrex Legend and eTrex Legend H models). Snow depths were recorded on standardized field sheets along with dates, recorder names, waypoint numbers, and comments. GPS locations were downloaded as text files from Garmin units using Topo! software, specifying NAD83 for surveys conducted after 2009. Download files contained waypoint number, latitude, longitude, date, and elevation. Each file was imported into a Microsoft Excel spreadsheet and snow depths corresponding to waypoints were entered manually from field sheets. Shapefiles were constructed in ArcInfo/ArcGIS from dbf files generated either directly from Excel spreadsheets (before 2008) or after importing into Microsoft Access and then exporting as dbfs. All shapefiles are provided in a UTM zone 13 projection and NAD83 horizontal datum. NOTE: This EML metadata file does not contain important geospatial data processing information. Before using any NWT LTER geospatial data read the arcgis metadata XML file in either ISO or FGDC compliant format, using ArcGIS software (ArcCatalog > description), or by viewing the .xml file provided with the geospatial dataset."
+MILES,EML,16.xml,Author / Originator,/eml:eml/dataset/creator,"Jennifer Morse Climate Technician University of Colorado, Institute of Arctic and Alpine Research (INSTAAR) University of Colorado - INSTAAR, UCB 450 Boulder CO 80309 USA"
+MILES,EML,16.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,2011
+MILES,EML,16.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,"Green Lakes Valley, Niwot Ridge, Colorado -105.644365 -105.616711 40.058748 40.046031"
+MILES,EML,16.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,environment
+MILES,EML,16.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Niwot Ridge
+MILES,EML,16.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,green lakes valley
+MILES,EML,16.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow survey
+MILES,EML,16.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,NWT
+MILES,EML,16.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Colorado
+MILES,EML,16.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Boulder
+MILES,EML,16.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Niwot Ridge LTER
+MILES,EML,11.xml,Resource Title,/eml:eml/dataset/title,"At-sea seabird censuses. Data on the species encountered (including marine mammals), their abundance, distribution and behavior. Data collected aboard cruises off the coast of the Western Antarctic Penninsula, 1993, 1999 and 2001."
+MILES,EML,11.xml,Abstract,/eml:eml/dataset/abstract,"The objectives of the LTER seabird component during the 92-93 season cruises were similar. These objectives included 1) determining the pelagic abundance and distribution of Adelie Penguins, 2) examining how the physical and biological characteristics of the marine environment influence these parameters and, 3) using these data to identify foraging areas that may be important to Adelie populations being studied as part of land-based work at Palmer Station. Secondary objectives included documenting the abundance and distribution of other seabirds and marine mammals within the LTER study area. The focus of the January cruise was the nearshore foraging habitat,which required sampling at smaller scales. All seabird censuses were thus conducted within approximately 100 kms of Palmer Station while traversing a sampling grid with stations at 10km intervals. The first two days (18-20 January) of this cruise were spent covering the selected grid as rapidly as possible resulting in 45 transects spaced at 45-60 minute intervals. There were no stops at the 10km stations during this Fast Grid phase. Upon completion of the Fast Grid, a force 12 gale suspended data collection for 24 hours. From January 22-25 the grid direction was reversed and the grid repeated. During this Slow Grid phase, 2-M net tows were done at 10km intervals and BOPS and 1-M and 2-M net tows every 20 km. All seabird censusesduring the cruise were done using the procedures outlined in theprevious paragraph."
+MILES,EML,11.xml,Author / Originator,/eml:eml/dataset/creator,Palmer Station Antarctica LTER Palmer Station Antarctica LTER Office 208 Geoscience 61 Route 9W - PO Box 1000 Palisades New York 10964-8000 USA
+MILES,EML,11.xml,Author / Originator,/eml:eml/dataset/creator,William Fraser Polar Oceans Research bfraser@3rivers.net
+MILES,EML,11.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 0 \n column , ' \"
+MILES,EML,11.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,populations
+MILES,EML,11.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,habitats
+MILES,EML,11.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,marine
+MILES,EML,11.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,taxonomy
+MILES,EML,11.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,fishes
+MILES,EML,11.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,mammals
+MILES,EML,18.xml,Resource Title,/eml:eml/dataset/title,"Snow depth data for Saddle grid, 1992 - ongoing"
+MILES,EML,18.xml,Abstract,/eml:eml/dataset/abstract,"The depth of snow was measured at 88 points on the saddle grid. The 500 x 350 m study area (17.5 ha) consisted of a grid of 8 rows of stakes in an east/west direction and 11 rows of stakes in a north/south direction (for a total of 88 stakes). The stakes were located 50 m apart. Each stake was given a point identification number starting with 1 in the southwest corner and progressing in an easterly direction for each of the east/west rows so that if head of this file represented the north compass point and the tail represented the south compass point, then the grid would look like this: 71 72 73 74 75 76 77 78 79 80 801(=80A) 61 62 63 64 65 66 67 68 69 70 701(=70A) 51 52 53 54 55 56 57 58 59 60 601(=60A) 41 42 43 44 45 46 47 48 49 50 501(=50A) 31 32 33 34 35 36 37 38 39 40 401(=40A) 21 22 23 24 25 26 27 28 29 30 301(=30A) 11 12 13 14 15 16 17 18 19 20 201(=20A) 1 2 3 4 5 6 7 8 9 10 101(=10A)"
+MILES,EML,18.xml,Author / Originator,/eml:eml/dataset/creator,"Niwot Ridge LTER 4001 Discovery Drive, UCB 450 University of Colorado Boulder CO 80303 United States http://niwot.colorado.edu/"
+MILES,EML,18.xml,Author / Originator,/eml:eml/dataset/creator,Donald (Skip) Walker PO Box 757000 Fairbanks Alaska 99775-6780 UNITED STATES (907)474-2460
+MILES,EML,18.xml,Distribution Format,/eml:eml/dataset/dataTable/physical/dataFormat,"1 \r\n column , '"
+MILES,EML,18.xml,Temporal Extent,/eml:eml/dataset/coverage/temporalCoverage,1992-10-30 2016-12-31
+MILES,EML,18.xml,Spatial Extent,/eml:eml/dataset/coverage/geographicCoverage,Study area was the Niwot Ridge saddle grid. -105.643 -105.3753 40.0615 39.9932
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow depth
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snowpack
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow accumulation
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snowmelt
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Saddle grid
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,snow survey
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,meteorology
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,climatology
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,hydrology
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,long term
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,NWT
+MILES,EML,18.xml,Keyword,/eml:eml/dataset/keywordSet/keyword,Niwot Ridge LTER

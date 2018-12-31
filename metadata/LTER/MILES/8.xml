@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-pie.429.1"
+  system="https://pasta.edirepository.org"
+  xmlns:ds="eml://ecoinformatics.org/dataset-2.1.0"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=PIE,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/c336afc7d1a0d25488e8f03e165c573d</alternateIdentifier>
+    <shortName>MAR-NE-EddyFluxTallTower-2015</shortName>
+    <title>PIE LTER eddy flux measurements during 2015 from second high marsh site (Spartina patens/short Spartina alterniflora) Tall Tower off Nelson Island Creek, Rowley, Massachusetts</title>
+    <creator>
+      <individualName>
+        <givenName>Anne</givenName>
+        <surName>Giblin</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Biological Lab, 7 MBL Street</deliveryPoint>
+        <city>Woods Hole</city>
+        <administrativeArea>MA</administrativeArea>
+        <postalCode>02543</postalCode>
+        <country>US</country>
+      </address>
+      <phone phonetype="voice">(508) 289-7488</phone>
+      <phone phonetype="facsimile">(508) 457-1548</phone>
+      <electronicMailAddress>agiblin@mbl.edu</electronicMailAddress>
+      <userId directory="http://orcid.org">http://orcid.org/0000-0003-3851-2178</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Inke</givenName>
+        <surName>Forbrich</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Biological Laboratory, 7 MBL Street</deliveryPoint>
+        <city>Woods Hole</city>
+        <administrativeArea>MA</administrativeArea>
+        <postalCode>02543</postalCode>
+        <country>US</country>
+      </address>
+      <phone phonetype="voice">(508) 289-7741</phone>
+      <phone phonetype="facsimile">(508) 457-1548</phone>
+      <electronicMailAddress>iforbrich@mbl.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <organizationName>Plum Island Ecosystems LTER</organizationName>
+      <onlineUrl>http://pie-lter.ecosystems.mbl.edu/</onlineUrl>
+    </creator>
+    <metadataProvider>
+      <organizationName>Plum Island Ecosystems LTER</organizationName>
+      <onlineUrl>http://pie-lter.ecosystems.mbl.edu/</onlineUrl>
+    </metadataProvider>
+    <pubDate>2018-02-01</pubDate>
+    <language>English</language>
+    <abstract>
+      <section>
+        <para>
+          <literalLayout>We deployed an eddy covariance system to measure ecosystem-atmosphere exchange of CO2Â  above a high marsh system (Spartina patens, short Spartina alterniflora) located on the Parker River Wildlife Refuge in marshes of Plum Island Sound, Rowley MA. The system is located near a higher elevation rock outcroppingprotected area which allows the tower set up to remain during the Winter as it is protected from ice flows. The data represents CO2 exchange for all 12 months of 2015.</literalLayout>
+        </para>
+      </section>
+    </abstract>
+    <keywordSet>
+      <keyword>Primary Production</keyword>
+      <keyword>Organic Matter</keyword>
+      <keywordThesaurus>Core Areas</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>high marsh</keyword>
+      <keyword>primary production</keyword>
+      <keyword>organic matter</keyword>
+      <keyword>Massachusetts</keyword>
+      <keyword>carbon fluxes</keyword>
+      <keyword>net ecosystem exchange</keyword>
+      <keyword>PIE LTER</keyword>
+      <keyword>Plum Island Ecosystems</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <section>
+        <title>Data Policies</title>
+        <para>
+          <literalLayout>PIE LTER Data Use Agreement
+This work is licensed under the Creative Commons Attribution 4.0 International License, CC BY - Attribution. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
+
+The re-use of scientific data has the potential to greatly increase communication, collaboration and synthesis within and among disciplines, and thus is fostered, supported and encouraged. Permission to use this dataset is granted to the Data User free of charge subject to the following terms:
+
+1) Citation. It is considered a matter of professional ethics to acknowledge the work of other scientists. Thus, the Data User will properly cite the Data Set in any publications or in the metadata of any derived data products that were produced using the Data Set. Citation should take the following general form: Creator, Year of Data Publication, Title of Dataset, Publisher, Dataset identifier.
+
+For example:
+Giblin, Anne; Hopkinson, Charles (2000): Rates of benthic metabolism and nutrient cycling in the Parker and Rowley Rivers of the Plum Island Sound estuary. Plum Island Ecosystems LTER, Long Term Ecological Research Network. http://dx.doi.org/10.6073/pasta/17fa8b4fef50c7b85cac3d61482a7cb6
+
+2) Acknowledgement. The Data User should acknowledge any institutional support or specific funding awards referenced in the metadata accompanying this dataset in any publications where the Data Set contributed significantly to its content. Acknowledgements should identify the supporting party, the party that received the support, and any identifying information such as grant numbers. The Data User should contact the Data Set Contact to ensure the appropriate Granting Programs are acknowledged.
+
+For example:
+Data sets were provided by the Plum Island Ecosystems LTER. This material is based upon work supported by the National Science Foundation under Grants #OCE-9726921, OCE-0423565, OCE-1058747, OCE-1238212, OCE-1637630.
+
+3) Notification. The Data User will notify the Data Set Contact when any derivative work or publication based on or derived from the Data Set is distributed. The Data User will provide the data contact with two reprints of any publications resulting from use of the Data Set and will provide copies, or on-line access to, any derived digital products. Notification will include an explanation of how the Data Set was used to produce the derived work.
+
+4) Collaboration. The Data Set has been released in the spirit of open scientific collaboration. Data Users are thus strongly encouraged to consider consultation, collaboration and/or co-authorship with the Data Set Creator.
+
+5) Disclaimer. While substantial efforts are made to ensure the accuracy of data and documentation contained in this Data Set, complete accuracy of data and metadata cannot be guaranteed. All data and metadata are made available "as is". The Data User holds all parties involved in the production or distribution of the Data Set harmless for damages resulting from its use or interpretation.</literalLayout>
+        </para>
+      </section>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">http://pie-lter.ecosystems.mbl.edu/content/pie-lter-eddy-flux-measurements-during-2015-second-high-marsh-site-spartina-patensshort</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>PIE Eddy Flux station, Tall tower on rock outcropping in marsh off Stackyard Rd, Nelson Island Creek, PRNWR, Rowley, MA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-70.830223083496</westBoundingCoordinate>
+          <eastBoundingCoordinate>-70.830223083496</eastBoundingCoordinate>
+          <northBoundingCoordinate>42.742439270020</northBoundingCoordinate>
+          <southBoundingCoordinate>42.742439270020</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2015-01-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2015-12-31</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>
+        <para>
+          <literalLayout>Data collection and processing complete
+Version 01: February 1, 2018, data and metadata created to comply with importation to Drupal and LTER PASTA. Used MarcrosExportEML_HTML (working)pie_excel2007_Jan2018.xlsm 1/30/2018 2:24 PM for QA/QC to EML 2.1.0</literalLayout>
+        </para>
+      </description>
+    </maintenance>
+    <contact>
+      <organizationName>Plum Island Ecosystems LTER</organizationName>
+      <onlineUrl>http://pie-lter.ecosystems.mbl.edu/</onlineUrl>
+    </contact>
+    <publisher>
+      <organizationName>Plum Island Ecosystems LTER</organizationName>
+      <onlineUrl>http://pie-lter.ecosystems.mbl.edu/</onlineUrl>
+    </publisher>
+    <pubPlace>Plum Island Ecosystems</pubPlace>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <para>
+              <literalLayout>We deployed one eddy covariance system to measure NEE of the dominant high marsh at PIE. The location of the tower is ca. Â 600 meters away from the parking lot at Stackyard Road, Rowley, MA, within the Nelson Island Creek catchment. Deployment of the system is year round. The site was equipped with a Campbell ScientificÂ® Closed Path System (CPEC200). Micrometeorological instrumentation was mounted on a tower at a height of 14m above the marsh Â surface.
+Environmental data were recorded as 10min averages. Air temperature and relative humidity were monitored at the same height as the anemometer (Campbell Scientific HC2S3 enclosed in a naturally aspirated radiation shield). A four-component net radiometer (Hukseflux NR01) was mounted 1.5 m aboveground of the high marsh. At the same height, two sensors (LI190SB, Licor) monitored incoming and reflected photosynthetically active radiation (PAR). In addition, a pressure transducer (Campbell Scientific CS456) recorded water table height at the high marsh. Soil temperature at a depth of 2cm, 6cm, 10cm, 20cm and 40cm was measured with (TCAV-L; Campbell Scientific; Logan, Utah, USA), and soil heat flux at a depth of 8 cm was measured with two soil heat flux plates (HFP01-SC; Campbell Scientific; Logan, Utah, USA).Â  This data was recorded on a separate CR3000 datalogger.Â Â Â Â Â 
+Turbulent fluxes of momentum, sensible heat, latent heat and CO2 were determined by the eddy covariance technique (Baldocchi et al. 1988). Half hourly CO2 and H2O fluxes were calculated as the covariance between the turbulent departures from the mean of the 10 Hz vertical wind speed measured with a 3D sonic anemometer (CSAT3; Campbell Scientific; Logan, Utah, USA) and the CO2 and H2O dry mixing ratio measured with the closed path analyzer.Â  Fluxes were processed using EdiRe software (Robert Clement, University of Edinburgh) and reported using the meteorological sign convention where negative NEE indicates carbon uptake and positive NEE indicates carbon loss from the ecosystem.Â  Two coordinate rotations were performed on the wind components, and the time lag between wind and CO2 mixing ratio measurements was determined and removed for each averaging interval of 30min. For every 30 min period, a factor for the correction of the frequency attenuation of the flux was calculated according to Moore [1986] and applied to the flux. Fluxes were calculated using the Edire software (version 1.5.0.32, R. Clement, University of Edinburgh, UK). Afterward, fluxes were filtered for system malfunctioning and calibration periods, integral turbulence characteristics, stationarity, and wind direction [Foken etal., 2012]. We also excluded measurements when less than 80% of the flux was generated within the study area. Thresholds in friction velocity (uâ) for nighttime fluxes were determined using REddyProc .
+To continuously monitor aboveground biomass, we calculated a broadband normalized difference vegetation index (NDVI) based on the approach of Wilson and Meyers [2007]. Incoming (i) and reflected (r) Solar (S) and photosynthetically active radiation (PAR) measurements were converted into red and near-infrared reflectance. Solar zenith effects were removed by using data exclusively around solar noon (10 A.M.â2 P.M. EST). In our system, spring tides occurred around noon, so that simultaneous radiation measurements recorded the effect of tidal inundation at that time. A decrease in NDVI would reflect that during inundation the amount of biomass that was air exposed was smaller than under nonflooded conditions. We included this effect in our NEE model by creating two continuous time series of NDVI to simulate flooded and nonflooded conditions: NDVIall which included spring tide effects, and a reference time series, NDVIref, which represented nonflooded conditions.
+NEE is gap-filled with a modified PLIRTLE model (NEE=GPP+Reco), using NDVI_all, air temperature and PAR as input. GPP_all and Reco_all are estimated using the two sub-models of the PLIRTLE model. GPP_ref and Reco_ref are modelled with NDVI_ref as input variable and thus represent the fluxes occurring if no tidal inundation had occurred.
+References:
+Baldocchi et al. [1988]: Measuring Biosphere-Atmosphere Exchanges of Biologically Related Gases with Micrometeorological Methods. Ecology, Vol. 69, No. 5, pp. 1331-1340.
+Moore [1986]: FrequencyÂ  response correction s for eddy correlation systems. Boundary Layer Meteorology,Â  Vol. 37, pp. 17-35.
+Foken et al. [2012]: Corrections and Data Quality Control. In: Aubinet, Vesala, Papale (editors):Â  Eddy covariance - a practical guide to measurement and data analysis.
+Papale et al. [2006]: Towards a standardized processing of Net Ecosystem Exchange measured with eddy covariance technique: algorithms and uncertainty estimation . Biogeosciences, Vol. 3, pp. 571-583.</literalLayout>
+            </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <dataTable>
+      <entityName>MAR-NE-EddyFluxTallTower-2015_csv</entityName>
+      <entityDescription>PIE LTER eddy flux measurements during 2015 from second high marsh site (Spartina patens/short Spartina alterniflora) Tall Tower off Nelson Island Creek, Rowley, Massachusetts</entityDescription>
+      <physical>
+        <objectName>MAR-NE-EddyFluxTallTower-2015.csv</objectName>
+        <size>6060708</size>
+        <authentication method="MD5">bb20caf4ed0f9174899c3622bd7257bc</authentication>
+        <authentication method="SHA-1">431bf20d798ffc922ecb2cddc916cd34d37605b4</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-pie/429/1/f9203cd374c3d2ad8b731ae56bb6538d</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>DATE</attributeName>
+          <attributeLabel>DATE</attributeLabel>
+          <attributeDefinition>Date of measurements</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>TIME</attributeName>
+          <attributeLabel>TIME</attributeLabel>
+          <attributeDefinition>Timestamp of measurements (center of 30 min averaging period)</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>hh:mm</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>FC_SSITC_TEST</attributeName>
+          <attributeLabel>FC_SSITC_TEST</attributeLabel>
+          <attributeDefinition>Results of the Steady State and Integral Turbulence Characteristics for FC according to Foken (i.e. 1-9)</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>intermediate</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5</code>
+                    <definition>intermediate</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>intermediate</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>7</code>
+                    <definition>discard</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>8</code>
+                    <definition>discard</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>discard</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>FETCH_FILTER</attributeName>
+          <attributeLabel>FETCH_FILTER</attributeLabel>
+          <attributeDefinition>Footprint quality flag (i.e., 0, 1): 0 and 1 indicate data measured when wind coming from direction that should be discarded and kept, respectively</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>0</code>
+                    <definition>discard data</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>keep data</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>CO2</attributeName>
+          <attributeLabel>CO2</attributeLabel>
+          <attributeDefinition>Carbon Dioxide (CO2) mixing ratio</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerMole</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>FC</attributeName>
+          <attributeLabel>FC</attributeLabel>
+          <attributeDefinition>Carbon Dioxide (CO2) turbulent flux (no storage correction)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerMeterSquaredPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>H2O</attributeName>
+          <attributeLabel>H2O</attributeLabel>
+          <attributeDefinition>Water (H2O) vapor mixing ratio</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>millimolePerMole</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>G1</attributeName>
+          <attributeLabel>G1</attributeLabel>
+          <attributeDefinition>Soil Heat Flux 1</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>wattPerMeterSquared</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>G2</attributeName>
+          <attributeLabel>G2</attributeLabel>
+          <attributeDefinition>Soil Heat Flux 2</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>wattPerMeterSquared</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>H</attributeName>
+          <attributeLabel>H</attributeLabel>
+          <attributeDefinition>Sensible heat turbulent flux (no storage correction)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>wattPerMeterSquared</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>H_SSITC_TEST</attributeName>
+          <attributeLabel>H_SSITC_TEST</attributeLabel>
+          <attributeDefinition>Results of the Steady State and Integral Turbulence Characteristics for H according to Foken (i.e. 1-9)</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>intermediate</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5</code>
+                    <definition>intermediate</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>intermediate</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>7</code>
+                    <definition>discard</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>8</code>
+                    <definition>discard</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>discard</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>LE</attributeName>
+          <attributeLabel>LE</attributeLabel>
+          <attributeDefinition>Latent heat turbulent flux (no storage correction)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>wattPerMeterSquared</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>LE_SSITC_TEST</attributeName>
+          <attributeLabel>LE_SSITC_TEST</attributeLabel>
+          <attributeDefinition>Results of the Steady State and Integral Turbulence Characteristics for LE according to Foken  (i.e., 1-9)</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>intermediate</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5</code>
+                    <definition>intermediate</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>intermediate</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>7</code>
+                    <definition>discard</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>8</code>
+                    <definition>discard</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>9</code>
+                    <definition>discard</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>PA</attributeName>
+          <attributeLabel>PA</attributeLabel>
+          <attributeDefinition>Atmospheric Pressure</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilopascal</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>RH</attributeName>
+          <attributeLabel>RH</attributeLabel>
+          <attributeDefinition>Relative Humidity</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>percent</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>T_SONIC</attributeName>
+          <attributeLabel>T_SONIC</attributeLabel>
+          <attributeDefinition>Sonic temperature</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>T_SONIC_SIGMA</attributeName>
+          <attributeLabel>T_SONIC_SIGMA</attributeLabel>
+          <attributeDefinition>Standard deviation of sonic temperature</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>TA</attributeName>
+          <attributeLabel>TA</attributeLabel>
+          <attributeDefinition>Air temperature</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>VPD</attributeName>
+          <attributeLabel>VPD</attributeLabel>
+          <attributeDefinition>Vapor Pressure Deficit</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilopascal</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>ALB</attributeName>
+          <attributeLabel>Albedo</attributeLabel>
+          <attributeDefinition>Albedo</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>percent</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>LW_IN</attributeName>
+          <attributeLabel>Longwave radiation, incoming</attributeLabel>
+          <attributeDefinition>Longwave radiation, incoming</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>wattPerMeterSquared</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>LW_OUT</attributeName>
+          <attributeLabel>Longwave radiation, outgoing</attributeLabel>
+          <attributeDefinition>Longwave radiation, outgoing</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>wattPerMeterSquared</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>NDVI</attributeName>
+          <attributeLabel>NDVI</attributeLabel>
+          <attributeDefinition>Normalized Difference Vegetation Index (including tidal inundation)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>NDVIref</attributeName>
+          <attributeLabel>NDVIref</attributeLabel>
+          <attributeDefinition>Reference Normalized Difference Vegetation Index (no tidal inundation)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>NETRAD</attributeName>
+          <attributeLabel>Net radiation</attributeLabel>
+          <attributeDefinition>Net radiation</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>wattPerMeterSquared</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>PPFD_IN</attributeName>
+          <attributeLabel>PPFD_IN</attributeLabel>
+          <attributeDefinition>Photosynthetic photon flux density, incoming</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerMeterSquaredPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>PPFD_OUT</attributeName>
+          <attributeLabel>PPFD_OUT</attributeLabel>
+          <attributeDefinition>Photosynthetic photon flux density, outgoing</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerMeterSquaredPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>SW_IN</attributeName>
+          <attributeLabel>Shortwave radiation, incoming</attributeLabel>
+          <attributeDefinition>Shortwave radiation, incoming</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>wattPerMeterSquared</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>SW_OUT</attributeName>
+          <attributeLabel>Shortwave radiation, outgoing</attributeLabel>
+          <attributeDefinition>Shortwave radiation, outgoing</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>wattPerMeterSquared</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>TS5</attributeName>
+          <attributeLabel>Soil temperature @5cm</attributeLabel>
+          <attributeDefinition>Soil temperature @5cm</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>TS10</attributeName>
+          <attributeLabel>Soil temperature @10cm</attributeLabel>
+          <attributeDefinition>Soil temperature @10cm</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>TS20</attributeName>
+          <attributeLabel>Soil temperature @20cm</attributeLabel>
+          <attributeDefinition>Soil temperature @20cm</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>TS40</attributeName>
+          <attributeLabel>Soil temperature @40cm</attributeLabel>
+          <attributeDefinition>Soil temperature @40cm</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>SALINITY</attributeName>
+          <attributeLabel>SALINITY</attributeLabel>
+          <attributeDefinition>SALINITY</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>partPerThousand</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>WTD</attributeName>
+          <attributeLabel>Water table depth</attributeLabel>
+          <attributeDefinition>Water table depth</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>MO_LENGTH</attributeName>
+          <attributeLabel>Monin-Obukhov length</attributeLabel>
+          <attributeDefinition>Monin-Obukhov length</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>U_SIGMA</attributeName>
+          <attributeLabel>U_SIGMA</attributeLabel>
+          <attributeDefinition>Standard deviation of velocity fluctuations (towards main-wind direction after coordinates rotation)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>meterPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>USTAR</attributeName>
+          <attributeLabel>Friction velocity</attributeLabel>
+          <attributeDefinition>Friction velocity</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>meterPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>V_SIGMA</attributeName>
+          <attributeLabel>V_SIGMA</attributeLabel>
+          <attributeDefinition>Standard deviation of lateral velocity fluctuations (cross main-wind direction after coordinates rotation)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>meterPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>W_SIGMA</attributeName>
+          <attributeLabel>W_SIGMA</attributeLabel>
+          <attributeDefinition>Standard deviation of vertical velocity fluctuations</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>meterPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>WD</attributeName>
+          <attributeLabel>Wind direction</attributeLabel>
+          <attributeDefinition>Wind direction</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>WS</attributeName>
+          <attributeLabel>Wind speed</attributeLabel>
+          <attributeDefinition>Wind speed</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>meterPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>WS_MAX</attributeName>
+          <attributeLabel>WS_MAX</attributeLabel>
+          <attributeDefinition>maximum wind speed in the averaging period</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>meterPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>ZL</attributeName>
+          <attributeLabel>ZL</attributeLabel>
+          <attributeDefinition>Monin-Obukhov Stability</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>GPP</attributeName>
+          <attributeLabel>GPP</attributeLabel>
+          <attributeDefinition>Gross Primary Productivity (as CO2, including tidal inundation)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerMeterSquaredPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>NEE</attributeName>
+          <attributeLabel>NEE</attributeLabel>
+          <attributeDefinition>Net Ecosystem Exchange (as CO2, including tidal inundation)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerMeterSquaredPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>RECO</attributeName>
+          <attributeLabel>RECO</attributeLabel>
+          <attributeDefinition>Ecosystem respiration (as CO2, including tidal inundation)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerMeterSquaredPerSecond</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NaN</code>
+            <codeExplanation>not available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>17520</numberOfRecords>
+    </dataTable>
+    <otherEntity>
+      <entityName>MAR-NE-EddyFluxTallTower-2015_xls</entityName>
+      <entityDescription>Excel metadata and data file associated with the csv data source file. Excel file after downloading is to be used for adding/editing new metadata and data.</entityDescription>
+      <physical>
+        <objectName>MAR-NE-EddyFluxTallTower-2015.xls</objectName>
+        <size>13300224</size>
+        <authentication method="MD5">6851760e18978bb0f770fd132e541568</authentication>
+        <authentication method="SHA-1">db0df69c016e85b55cd91d60a08389ca77af2209</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>application/vnd.ms-excel</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-pie/429/1/ac6f43f115f42901389b3ffd9111361c</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>document</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <stmml:unitList xmlns="http://www.xml-cml.org/schema/stmml"
+        xmlns:sch="http://www.ascc.net/xml/schematron"
+        xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xml-cml.org/schema/stmml-1.1 http://nis.lternet.edu/schemas/EML/eml-2.1.0/stmml.xsd">
+        <stmml:unit abbreviation="" id="micromolePerMole"
+          name="micromolePerMole" unitType="">
+          <stmml:description/>
+        </stmml:unit>
+        <stmml:unit abbreviation="umol/m2/second" constantToSI="0"
+          id="micromolePerMeterSquaredPerSecond" multiplierToSI="0.0864"
+          name="micromolePerMeterSquaredPerSecond"
+          parentSI="molePerMeterSquaredPerDay" unitType="arealMassDensityRate">
+          <stmml:description>micromole per meter squared per second</stmml:description>
+        </stmml:unit>
+        <stmml:unit abbreviation="" id="millimolePerMole"
+          name="millimolePerMole" unitType="">
+          <stmml:description>millimoles of water per  mole of air. Also can be parts per thousand</stmml:description>
+        </stmml:unit>
+        <stmml:unit abbreviation="W/mÂ²" id="wattPerMeterSquared"
+          name="wattPerMeterSquared" unitType="irradiance">
+          <stmml:description>irradiance unit</stmml:description>
+        </stmml:unit>
+        <stmml:unit abbreviation="%" constantToSI="0" id="percent"
+          multiplierToSI="100" name="percent" parentSI="numberPerNumber" unitType="dimensionless">
+          <stmml:description>ratio of two quantities as percent composition (1:100)</stmml:description>
+        </stmml:unit>
+        <stmml:unit id="partPerThousand">
+          <stmml:description/>
+        </stmml:unit>
+        <stmml:unit abbreviation="m/s" id="meterPerSecond"
+          name="meterPerSecond" unitType="speed">
+          <stmml:description>meters per second</stmml:description>
+        </stmml:unit>
+      </stmml:unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

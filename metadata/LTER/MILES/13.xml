@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-pal.92.5" scope="system"
+  system="https://pasta.edirepository.org"
+  xmlns:ds="eml://ecoinformatics.org/dataset-2.1.1"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://nis.lternet.edu/schemas/EML/eml-2.1.1/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=PAL,o=lter,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset scope="document">
+    <alternateIdentifier>92</alternateIdentifier>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/32b915bded9eeb9d36dc64bab4e13db7</alternateIdentifier>
+    <title>Adelie penguin breeding population arrival chronology on Humble Island, 1991 - present.	</title>
+    <creator>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <address>
+        <deliveryPoint>Palmer Station Antarctica LTER Office208 Geoscience61 Route 9W - PO Box 1000</deliveryPoint>
+        <city>Palisades</city>
+        <administrativeArea>New York</administrativeArea>
+        <postalCode>10964-8000</postalCode>
+        <country>USA</country>
+      </address>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>William</givenName>
+        <surName>Fraser</surName>
+      </individualName>
+      <organizationName>Polar Oceans Research</organizationName>
+      <electronicMailAddress>bfraser@3rivers.net</electronicMailAddress>
+    </creator>
+    <metadataProvider>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <address>
+        <deliveryPoint>Palmer Station Antarctica LTER Office208 Geoscience61 Route 9W - PO Box 1000</deliveryPoint>
+        <city>Palisades</city>
+        <administrativeArea>New York</administrativeArea>
+        <postalCode>10964-8000</postalCode>
+        <country>USA</country>
+      </address>
+    </metadataProvider>
+    <pubDate>2017-12-04</pubDate>
+    <abstract>The fundamental long-term objective of the seabird component of the Palmer LTER (PAL) has been to identify and understand the mechanistic processes that regulate the mean fitness (population growth rate) of regional penguin populations.  Two hypotheses have guided this research, with one suggesting that population mean fitness is best explained by changes in regional krill biomass, and the other proposing that long-term changes in sea ice affects mean fitness by tipping the balance in favor of one species over another in accordance with species-specific evolved life history affinities to sea ice.  Although these hypotheses are not mutually exclusive, current evidence in the PAL region tends to favor the latter over the former.  Since the inception of PAL, AdÃ©lie penguin populations have effectively collapsed, while those of gentoo and chinstrap penguins have increased dramatically, trends that are spatially and temporally coherent with decreasing regional sea ice duration. AdÃ©lie penguins are an ice-obligate polar species whose life history is intimately linked to the presence of sea ice, while chinstrap and gentoo penguins are ice-intolerant species whose life histories evolved in the sub-Antarctic, where sea ice is a less permanent feature of the marine ecosystem.  In contrast, although krill constitute the most important component of the summer diets by mass of these three penguin species, changes in PAL krill abundances have exhibited no long-term trends, and thus fail to explain the divergent patterns in penguin populations evident in our time series.     
+
+The arrival chronology of adult AdÃ©lie penguins on Humble Island is documented annually through island-wide censuses performed as ice and weather conditions permit.  Recorded data (numbers of adults present) provide a measure of the number of adults arriving daily at the breeding colonies, a metric that is sensitive to environmental conditions such as sea ice extent during late winter and early spring.  These data are also used in combination with other metrics to determine the optimal window for other, more extensive area-wide breeding population censuses (see CENSUS). 
+</abstract>
+    <keywordSet>
+      <keyword>taxonomy</keyword>
+      <keyword>populations</keyword>
+      <keyword>birds</keyword>
+      <keyword>population and community properties</keyword>
+      <keyword>population dynamics</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Population Studies</keyword>
+      <keywordThesaurus>LTER Core Areas</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>The data available here are intended for scholarly use by the research community,
+                with the express understanding that data users will properly acknowledge the originating investigator. Use or
+                reproduction of any material herein for any commercial purpose is prohibited without prior written permission
+                from the responsible party.
+            </para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">http://oceaninformatics.ucsd.edu/datazoo/catalogs/pallter/datasets/92</url>
+      </online>
+    </distribution>
+    <coverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1991</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2015</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact>
+      <positionName>PAL LTER Information Manager</positionName>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <electronicMailAddress>pallter-im@ucsd.edu</electronicMailAddress>
+    </contact>
+    <publisher>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <address>
+        <deliveryPoint>Palmer Station Antarctica LTER Office208 Geoscience61 Route 9W - PO Box 1000</deliveryPoint>
+        <city>Palisades</city>
+        <administrativeArea>New York</administrativeArea>
+        <postalCode>10964-8000</postalCode>
+        <country>USA</country>
+      </address>
+    </publisher>
+    <dataTable id="92.table_92">
+      <entityName>AdeliePenguinPopulationonHumbleIsland</entityName>
+      <entityDescription>Main data table for dataset</entityDescription>
+      <physical>
+        <objectName>table_92.csv</objectName>
+        <characterEncoding>ASCII</characterEncoding>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+              <literalCharacter>\</literalCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-pal/92/5/46e167a14c72d4288e91df3a0a7d9d03</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="92.table_92.studyName">
+          <attributeName>studyName</attributeName>
+          <attributeDefinition>Sampling expedition from which data were collected, generated, etc.</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sampling expedition from which data were collected, generated, etc.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="92.table_92.col_1366">
+          <attributeName>Date GMT</attributeName>
+          <attributeDefinition>date in GMT</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="92.table_92.col_1367">
+          <attributeName>Island</attributeName>
+          <attributeDefinition>abbreviated name of an island</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>DRE</code>
+                    <definition>Dream Island, Lat:-64.73,  Lon:-64.23</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>TOR</code>
+                    <definition>Torgersen Island, Lat:-64.77,  Lon:-64.08</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>HUM</code>
+                    <definition>Humble Island, Lat: -64.77,  Lon: -64.1</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>LIT</code>
+                    <definition>Litchfield Island, Lat:-64.77, Lon: -64.1</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SHO</code>
+                    <definition>Shortcut Island, Lat:-64.78, Lon:-64.12</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>COR</code>
+                    <definition>Cormorant Island, Lat: -64.8, Lon: -63.97</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CHR</code>
+                    <definition>Christine Island, Lat:-64.8, Lon: -64.03</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BIS</code>
+                    <definition>Biscoe Point, Lat: -64.82, Lon: -63.82</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>TRU</code>
+                    <definition>Trundle Island, Lat: -65.38, Lon:-65.3</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ARM</code>
+                    <definition>Armstrong Reef, Lat: -65.9, Lon: -66.3</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>REN</code>
+                    <definition>Renaud Island, Lat: -65.66, Lon: -66</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BAR</code>
+                    <definition>Barcroft Islands, Lat: -66.45, Lon: -67.17</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GIN</code>
+                    <definition>Ginger Island, Lat: -67.67, Lon: -68.7</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>JEN</code>
+                    <definition>Jenny Island, Lat: -67.73, Lon: -68.4</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>AVI</code>
+                    <definition>Avian Island, Lat: -67.77, Lon: -68.9</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>FAU</code>
+                    <definition>Faure Islands, Lat: -68.1, Lon: -68.87</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ICE</code>
+                    <definition>Sea Ice</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SEA</code>
+                    <definition>At Sea</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="92.table_92.col_1368">
+          <attributeName>Colony</attributeName>
+          <attributeDefinition>code identifying an ecosystem colony, colony # refers to a colony on a specific island.</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>code identifying an ecosystem colony, colony # refers to a colony on a specific island.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="92.table_92.col_1369">
+          <attributeName>Adults</attributeName>
+          <attributeDefinition>penguin Breeding Pairs</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <stmml:unitList xmlns="http://www.xml-cml.org/schema/stmml"
+        xmlns:sch="http://www.ascc.net/xml/schematron"
+        xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xml-cml.org/schema/stmml-1.1 stmml.xsd">
+        <stmml:unitType id="dimensionless" name="dimensionless">
+          <stmml:dimension name="dimensionless"/>
+        </stmml:unitType>
+        <stmml:unit abbreviation="" id="number" name="number" unitType="dimensionless">
+          <stmml:description>a number</stmml:description>
+        </stmml:unit>
+      </stmml:unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-pal.101.2" scope="system"
+  system="https://pasta.lternet.edu"
+  xmlns:ds="eml://ecoinformatics.org/dataset-2.1.1"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://nis.lternet.edu/schemas/EML/eml-2.1.1/eml.xsd">
+  <access authSystem="https://pasta.lternet.edu/authentication"
+    order="allowFirst" scope="document" system="https://pasta.lternet.edu">
+    <allow>
+      <principal>uid=PAL,o=lter,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset scope="document">
+    <alternateIdentifier>101</alternateIdentifier>
+    <title>At-sea seabird censuses.  Data on the species encountered (including marine mammals), their abundance, distribution and behavior.  Data collected aboard cruises off the coast of the Western Antarctic Penninsula, 1993, 1999 and 2001.</title>
+    <creator>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <address>
+        <deliveryPoint>Palmer Station Antarctica LTER Office</deliveryPoint>
+        <deliveryPoint>208 Geoscience</deliveryPoint>
+        <deliveryPoint>61 Route 9W - PO Box 1000</deliveryPoint>
+        <city>Palisades</city>
+        <administrativeArea>New York</administrativeArea>
+        <postalCode>10964-8000</postalCode>
+        <country>USA</country>
+      </address>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>William</givenName>
+        <surName>Fraser</surName>
+      </individualName>
+      <organizationName>Polar Oceans Research</organizationName>
+      <electronicMailAddress>bfraser@3rivers.net</electronicMailAddress>
+    </creator>
+    <metadataProvider>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <address>
+        <deliveryPoint>Palmer Station Antarctica LTER Office</deliveryPoint>
+        <deliveryPoint>208 Geoscience</deliveryPoint>
+        <deliveryPoint>61 Route 9W - PO Box 1000</deliveryPoint>
+        <city>Palisades</city>
+        <administrativeArea>New York</administrativeArea>
+        <postalCode>10964-8000</postalCode>
+        <country>USA</country>
+      </address>
+    </metadataProvider>
+    <pubDate>2016</pubDate>
+    <abstract>The objectives of the LTER seabird component during the 92-93 season cruises were similar.  These objectives included 1) determining the pelagic abundance and distribution of Adelie Penguins, 2) examining how the physical and biological characteristics of the marine environment influence these parameters and, 3) using these data to identify foraging areas that may be important to Adelie populations being studied as part of land-based  work at Palmer Station.  Secondary objectives included documenting the abundance and distribution of other seabirds and marine mammals within the LTER study area.  The focus of the January cruise was the nearshore foraging habitat,which required sampling at smaller scales.  All seabird censuses were thus conducted within approximately 100 kms of Palmer Station while traversing a sampling grid with stations at 10km intervals.  The first two days (18-20 January) of this cruise were spent covering the selected grid as rapidly as possible resulting in 45 transects spaced at 45-60 minute intervals.  There were no stops at the 10km stations during this Fast Grid phase.  Upon completion of the Fast Grid, a force 12 gale suspended data collection for 24 hours.  From January 22-25 the grid direction was reversed and the grid repeated.  During this Slow Grid phase, 2-M net tows were done at 10km intervals and BOPS and 1-M and 2-M net tows every 20 km.  All seabird censusesduring the cruise were done using the procedures outlined in theprevious paragraph.</abstract>
+    <keywordSet>
+      <keyword>populations</keyword>
+      <keyword>habitats</keyword>
+      <keyword>marine</keyword>
+      <keyword>taxonomy</keyword>
+      <keyword>fishes</keyword>
+      <keyword>mammals</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>The data available here are intended for scholarly use by the research community,
+    with the express understanding that data users will properly acknowledge the originating investigator. Use or
+    reproduction of any material herein for any commercial purpose is prohibited without prior written permission
+    from the responsible party.</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">http://oceaninformatics.ucsd.edu/datazoo/data/pallter/datasets?action=summary&amp;id=101</url>
+      </online>
+    </distribution>
+    <contact>
+      <positionName>Information Manager</positionName>
+      <organizationName>LTER Network Office</organizationName>
+      <address>
+        <deliveryPoint>UNM Biology Department, MSC03-2020</deliveryPoint>
+        <deliveryPoint>1 University of New Mexico</deliveryPoint>
+        <city>Albuquerque</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>87131-0001</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">505 277-2535</phone>
+      <phone phonetype="fax">505 277-2541</phone>
+      <electronicMailAddress>tech-support@lternet.edu</electronicMailAddress>
+      <onlineUrl>http://www.lternet.edu</onlineUrl>
+    </contact>
+    <contact>
+      <positionName>PAL LTER Information Manager</positionName>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <electronicMailAddress>pallter-im@ucsd.edu</electronicMailAddress>
+    </contact>
+    <publisher>
+      <organizationName>Palmer Station Antarctica LTER</organizationName>
+      <address>
+        <deliveryPoint>Palmer Station Antarctica LTER Office</deliveryPoint>
+        <deliveryPoint>208 Geoscience</deliveryPoint>
+        <deliveryPoint>61 Route 9W - PO Box 1000</deliveryPoint>
+        <city>Palisades</city>
+        <administrativeArea>New York</administrativeArea>
+        <postalCode>10964-8000</postalCode>
+        <country>USA</country>
+      </address>
+    </publisher>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Frequency</title>
+            <para>moving censuses, 1-3 between stations</para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <dataTable id="dat_101">
+      <entityName>BirdCensusMovingWinter</entityName>
+      <entityDescription>Main data table for dataset</entityDescription>
+      <physical>
+        <objectName>101.2.csv</objectName>
+        <characterEncoding>ASCII</characterEncoding>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <quoteCharacter>"</quoteCharacter>
+              <literalCharacter>\</literalCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-pal/101/2/3b699c4096dd4e3b77ddc6fa6f20344d</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute id="dat_101.studyName">
+          <attributeName>studyName</attributeName>
+          <attributeDefinition>Sampling expedition from which data were collected, generated, etc.</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sampling expedition from which data were collected, generated, etc.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute id="dat_101.col_1491">
+          <attributeName>Event Number</attributeName>
+          <attributeDefinition>sequence of cruise happenings ordered by time</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">float</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_101.col_1492">
+          <attributeName>Datetime GMT</attributeName>
+          <attributeDefinition>date and time </attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">dateTime</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>date and time </definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_101.col_1493">
+          <attributeName>Cruise name</attributeName>
+          <attributeDefinition>cruiseName</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>cruiseName</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_101.col_1494">
+          <attributeName>Count Minute</attributeName>
+          <attributeDefinition>Minutes from start at which sample, measurement, or observation was taken</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>minute</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+          <missingValueCode>
+            <code>-999</code>
+            <codeExplanation>missing</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_101.col_1495">
+          <attributeName>Species</attributeName>
+          <attributeDefinition>Species of organism code</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>BBAL</code>
+                    <definition>Taxa: BLACK-BROWED ALBATROSS, Family: ALBATROSS, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GHAL</code>
+                    <definition>Taxa: GREY-HEADED ALBATROSS, Family: ALBATROSS, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>LMSA</code>
+                    <definition>Taxa: LIGHT-MANTLED SOOTY ALBATROSS, Family: ALBATROSS, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SOAL</code>
+                    <definition>Taxa: SOOTY ALBATROSS, Family: ALBATROSS, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNAL</code>
+                    <definition>Taxa: UNIDENTIFIED ALBATROSS, Family: ALBATROSS, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WAAL</code>
+                    <definition>Taxa: WANDERING ALBATROSS, Family: ALBATROSS, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SOFU</code>
+                    <definition>Taxa: SOUTHERN FULMAR, Family: FULMAR, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>KEGU</code>
+                    <definition>Taxa: KELP GULL, Family: GULL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ADPE</code>
+                    <definition>Taxa: ADELIE PENGUIN, Family: PENGUIN, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CHPE</code>
+                    <definition>Taxa: CHINSTRAP PENGUIN, Family: PENGUIN, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>EMPE</code>
+                    <definition>Taxa: EMPEROR PENGUIN, Family: PENGUIN, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GEPE</code>
+                    <definition>Taxa: GENTOO PENGUIN, Family: PENGUIN, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>MAPE</code>
+                    <definition>Taxa: MACARONI PENGUIN, Family: PENGUIN, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNPE</code>
+                    <definition>Taxa: UNIDENTIFIED PENGUIN, Family: PENGUIN, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ANPE</code>
+                    <definition>Taxa: ANTARCTIC PETREL, Family: PETREL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BLPE</code>
+                    <definition>Taxa: BLUE PETREL, Family: PETREL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CAPE</code>
+                    <definition>Taxa: CAPE PETREL, Family: PETREL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>DIPE</code>
+                    <definition>Taxa: COMMON DIVING PETREL, Family: PETREL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GIPE</code>
+                    <definition>Taxa: (SOUTHERN) GIANT PETREL, Family: PETREL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SNPE</code>
+                    <definition>Taxa: SNOW PETREL, Family: PETREL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNPT</code>
+                    <definition>Taxa: UNIDENTIFIED PETREL, Family: PETREL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WCPE</code>
+                    <definition>Taxa: WHITE-CHINNED PETREL, Family: PETREL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ANPR</code>
+                    <definition>Taxa: ANTARCTIC PRION, Family: PRION, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>FAPR</code>
+                    <definition>Taxa: FAIRY PRION, Family: PRION, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>TBPR</code>
+                    <definition>Taxa: THIN-BILLED PRION, Family: PRION, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNPR</code>
+                    <definition>Taxa: UNIDENTIFIED PRION, Family: PRION, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BESH</code>
+                    <definition>Taxa: BLUE-EYED SHAG, Family: SHAG/CORM, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>AMSH</code>
+                    <definition>Taxa: AMERICAN (SNOWY) SHEATHBILL , Family: SHEATHBILL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BRSK</code>
+                    <definition>Taxa: BROWN SKUA, Family: SKUA, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>HYSK</code>
+                    <definition>Taxa: HYBRID SKUA, Family: SKUA, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SPSK</code>
+                    <definition>Taxa: SOUTH POLAR SKUA, Family: SKUA, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNSK</code>
+                    <definition>Taxa: UNIDENTIFIED SKUA, Family: SKUA, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BBSP</code>
+                    <definition>Taxa: BLACK-BELLED STORM-PETREL , Family: STORM-PETREL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNSP</code>
+                    <definition>Taxa: UNIDENTIFIED STORM-PETREL, Family: STORM-PETREL, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WISP</code>
+                    <definition>Taxa: WILSON</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ANTE</code>
+                    <definition>Taxa: ANTARCTIC TERN, Family: TERN, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ARTE</code>
+                    <definition>Taxa: ARCTIC TERN, Family: TERN, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNTE</code>
+                    <definition>Taxa: UNIDENTIFIED TERN, Family: TERN, Taxon: BIRD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>PTER</code>
+                    <definition>Taxa: PTERAPOD, Family: SNAIL, Taxon: GASTROPOD</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>AMPH</code>
+                    <definition>Taxa: AMPHIPOD, Family: AMPHIPOD, Taxon: INVERTEBRATE</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CYLL</code>
+                    <definition>Taxa: CYLLOPSUS, Family: AMPHIPOD, Taxon: INVERTEBRATE</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>EUSI</code>
+                    <definition>Taxa: EUSIRUS, Family: AMPHIPOD, Taxon: INVERTEBRATE</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>GAMM</code>
+                    <definition>Taxa: GAMMERIDIAN, Family: AMPHIPOD, Taxon: INVERTEBRATE</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>HYPE</code>
+                    <definition>Taxa: HYPEROCHE, Family: AMPHIPOD, Taxon: INVERTEBRATE</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CRYS</code>
+                    <definition>Taxa: CRYSYLOROPHIUS, Family: KRILL, Taxon: INVERTEBRATE</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>EUSU</code>
+                    <definition>Taxa: EUPHUSIA SUPERBA, Family: KRILL, Taxon: INVERTEBRATE</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>THMA</code>
+                    <definition>Taxa: THYSANOESSA MACRURA, Family: KRILL, Taxon: INVERTEBRATE</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>HGDO</code>
+                    <definition>Taxa: HOURGLASS DOLPHIN, Family: DOLPHIN, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNDO</code>
+                    <definition>Taxa: UNIDENTIFIED DOLPHIN, Family: DOLPHIN, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>CRSE</code>
+                    <definition>Taxa: CRABEATER SEAL, Family: SEAL, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ELSE</code>
+                    <definition>Taxa: (SOUTHERN) ELEPHANT SEAL, Family: SEAL, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>FUSE</code>
+                    <definition>Taxa: (ANTARCTIC) FUR SEAL, Family: SEAL, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>LESE</code>
+                    <definition>Taxa: LEOPARD SEAL, Family: SEAL, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ROSE</code>
+                    <definition>Taxa: ROSS SEAL, Family: SEAL, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNSE</code>
+                    <definition>Taxa: UNIDENTIFIED SEAL, Family: SEAL, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>WESE</code>
+                    <definition>Taxa: WEDDELL SEAL, Family: SEAL, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>BLWH</code>
+                    <definition>Taxa: BLUE WHALE, Family: WHALE, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>FIWH</code>
+                    <definition>Taxa: FIN WHALE , Family: WHALE, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>HUWH</code>
+                    <definition>Taxa: HUMPBACK WHALE , Family: WHALE, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>KIWH</code>
+                    <definition>Taxa: KILLER WHALE, Family: WHALE, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>MIWH</code>
+                    <definition>Taxa: MINKE WHALE, Family: WHALE, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>PIWH</code>
+                    <definition>Taxa: PILOT WHALE , Family: WHALE, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>UNWH</code>
+                    <definition>Taxa: UNIDENTIFIED WHALE , Family: WHALE, Taxon: MAMMAL</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_101.col_1496">
+          <attributeName>Number</attributeName>
+          <attributeDefinition>From the set of non-negative integers {0,1,2,...}, the number of items. </attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+          <missingValueCode>
+            <code>-999</code>
+            <codeExplanation>missing</codeExplanation>
+          </missingValueCode>
+          <missingValueCode>
+            <code>-9998</code>
+            <codeExplanation>not determined (nd)</codeExplanation>
+          </missingValueCode>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>missing</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_101.col_1497">
+          <attributeName>Linkages</attributeName>
+          <attributeDefinition>From the set of non-negative integers {0,1,2,...}, the number of items. </attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">integer</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <customUnit>number</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>integer</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+          <missingValueCode>
+            <code>-999</code>
+            <codeExplanation>missing</codeExplanation>
+          </missingValueCode>
+          <missingValueCode>
+            <code>-9998</code>
+            <codeExplanation>not determined (nd)</codeExplanation>
+          </missingValueCode>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>missing</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_101.col_1498">
+          <attributeName>Behavior</attributeName>
+          <attributeDefinition>Behavior of organism</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>Fly Directionally</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>Fly Non-Directionally</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>3</code>
+                    <definition>On/In Water</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>4</code>
+                    <definition>On Ice</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>5</code>
+                    <definition>Swim/Porpoising</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>6</code>
+                    <definition>Feeding</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>7</code>
+                    <definition>Rafting</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+          <missingValueCode>
+            <code>-999</code>
+            <codeExplanation>missing</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_101.col_1499">
+          <attributeName>Direction</attributeName>
+          <attributeDefinition>orientation based on compass points</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>orientation based on compass points</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute id="dat_101.col_1500">
+          <attributeName>Notes</attributeName>
+          <attributeDefinition>text field to describe a log entry (ex. event log)</attributeDefinition>
+          <storageType typeSystem="http://www.w3.org/2001/XMLSchema-datatypes">string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>text field to describe a log entry (ex. event log)</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NULL</code>
+            <codeExplanation>No data available</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <stmml:unitList xmlns="http://www.xml-cml.org/schema/stmml"
+        xmlns:sch="http://www.ascc.net/xml/schematron"
+        xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xml-cml.org/schema/stmml-1.1 stmml.xsd">
+        <stmml:unitType id="dimensionless" name="dimensionless">
+          <stmml:dimension name="dimensionless"/>
+        </stmml:unitType>
+        <stmml:unitType id="time" name="time">
+          <stmml:dimension name="time"/>
+        </stmml:unitType>
+        <stmml:unit abbreviation="sec" id="second" name="second" unitType="time">
+          <stmml:description>SI unit of time</stmml:description>
+        </stmml:unit>
+        <stmml:unit abbreviation="" id="number" name="number" unitType="dimensionless">
+          <stmml:description>a number</stmml:description>
+        </stmml:unit>
+        <stmml:unit abbreviation="min" constantToSI="0" id="minute"
+          multiplierToSI="60" name="minute" parentSI="second" unitType="time">
+          <stmml:description>60 seconds</stmml:description>
+        </stmml:unit>
+      </stmml:unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
